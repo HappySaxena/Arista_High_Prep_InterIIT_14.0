@@ -1,0 +1,1 @@
+Run ./WD.sh directly in terminal.

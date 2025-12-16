@@ -1,0 +1,1133 @@
+options:
+  parameters:
+    author: ''
+    catch_exceptions: 'True'
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: Interference
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: Not titled yet
+    window_size: (1000,1000)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 8]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: Injection_Frequency
+  id: variable
+  parameters:
+    comment: ''
+    value: int(2.44e9)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1600, 276.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate
+  id: variable
+  parameters:
+    comment: ''
+    value: '20000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [184, 12]
+    rotation: 0
+    state: enabled
+- name: epy_block_0
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass blk(gr.sync_block):\n\
+      \    \"\"\"Realistic Microwave Oven Interference - Dynamic FFT Shaping v4\"\"\
+      \"\n\n    def __init__(self,\n                 samp_rate=1e6,\n            \
+      \     burst_rate=100,\n                 duty_cycle=0.40,\n                 noise_amp=1.0,\n\
+      \                 wobble_freq=3.0,\n                 wobble_depth=0.12,\n  \
+      \               hump_width=0.55,     # <<< STRONG microwave-like width\n   \
+      \              hump_gain=15.0):     # <<< STRONG microwave-like intensity\n\n\
+      \        gr.sync_block.__init__(\n            self,\n            name='Microwave\
+      \ Oven (FFT-Shaped Dynamic v4)',\n            in_sig=None,\n            out_sig=[np.complex64]\n\
+      \        )\n\n        # Store parameters\n        self.samp_rate = samp_rate\n\
+      \        self.burst_rate = burst_rate\n        self.duty_cycle = duty_cycle\n\
+      \        self.noise_amp = noise_amp\n        self.wobble_freq = wobble_freq\n\
+      \        self.wobble_depth = wobble_depth\n        self.hump_width = hump_width\n\
+      \        self.hump_gain = hump_gain\n\n        # Burst timing\n        self.samples_per_period\
+      \ = int(samp_rate / burst_rate)\n        self.samples_on = int(self.samples_per_period\
+      \ * duty_cycle)\n        self.counter = 0\n        self.time_idx = 0\n     \
+      \   self.phase = 0\n\n\n    def work(self, input_items, output_items):\n   \
+      \     out = output_items[0]\n        n = len(out)\n\n        # Time vector\n\
+      \        t = (np.arange(n) + self.time_idx) / self.samp_rate\n\n        # 1\
+      \ \u2014 Base noise (complex)\n        noise = (np.random.normal(0, self.noise_amp,\
+      \ n) +\n                 1j*np.random.normal(0, self.noise_amp, n))\n\n    \
+      \    # 2 \u2014 FFT-shaping (dynamic, based on buffer size)\n        F = np.fft.fftshift(np.fft.fft(noise))\n\
+      \n        # Frequency axis for shaping curve\n        freqs = np.linspace(-1,\
+      \ 1, n)\n\n        # Microwave hump (Gaussian bell shape across spectrum)\n\
+      \        shape = 1 + self.hump_gain * np.exp(-(freqs / self.hump_width)**2)\n\
+      \n        # 3 \u2014 Add MANY cavity-mode spikes (microwave textures)\n    \
+      \    spikes = np.zeros(n)\n        for _ in range(120):     # <<< Increased\
+      \ for realism\n            pos = np.random.randint(0, n)\n            spikes[pos]\
+      \ = np.random.uniform(0.4, 1.0)\n\n        # Smooth the spikes (spread them\
+      \ a little)\n        spikes = np.convolve(spikes, np.hanning(61), mode=\"same\"\
+      )\n\n        # Combine with hump\n        shape += spikes\n\n        # Apply\
+      \ shaping window\n        F *= shape\n\n        # Back to time-domain\n    \
+      \    shaped = np.fft.ifft(np.fft.ifftshift(F))\n\n        # 4 \u2014 Magnetron\
+      \ wobble (cause center drift)\n        wobble = self.wobble_depth * np.sin(2*np.pi*self.wobble_freq\
+      \ * t)\n        phase_drift = np.cumsum(2*np.pi * wobble)\n        shaped *=\
+      \ np.exp(1j * phase_drift)\n\n        # 5 \u2014 Burst gating\n        for i\
+      \ in range(n):\n            if self.counter < self.samples_on:\n           \
+      \     out[i] = np.complex64(shaped[i])\n            else:\n                out[i]\
+      \ = 0\n\n            self.counter += 1\n            if self.counter >= self.samples_per_period:\n\
+      \                self.counter = 0\n\n        # Update time\n        self.time_idx\
+      \ += n\n        return n\n\n"
+    affinity: ''
+    alias: ''
+    burst_rate: '100'
+    comment: ''
+    duty_cycle: '0.3'
+    hump_gain: '3.0'
+    hump_width: '0.35'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    noise_amp: '0.8'
+    samp_rate: samp_rate
+    wobble_depth: '0.15'
+    wobble_freq: '2.0'
+  states:
+    _io_cache: ('Microwave Oven (FFT-Shaped Dynamic v4)', 'blk', [('samp_rate', '1000000.0'),
+      ('burst_rate', '100'), ('duty_cycle', '0.4'), ('noise_amp', '1.0'), ('wobble_freq',
+      '3.0'), ('wobble_depth', '0.12'), ('hump_width', '0.55'), ('hump_gain', '15.0')],
+      [], [('0', 'complex', 1)], 'Realistic Microwave Oven Interference - Dynamic
+      FFT Shaping v4', ['burst_rate', 'duty_cycle', 'hump_gain', 'hump_width', 'noise_amp',
+      'samp_rate', 'wobble_depth', 'wobble_freq'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1352, 716.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_1
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass blk(gr.sync_block):\n\
+      \    \"\"\"Continuous ZigBee-like interference for 4 MHz sample rate\"\"\"\n\
+      \n    def __init__(self,\n                 samp_rate=4e6,        # Works with\
+      \ 4 MHz\n                 center_freq=2.44e9,   # ZigBee Ch.18\n           \
+      \      chip_rate=2e6,        # ZigBee chips\n                 gain=0.8):   \
+      \         # Interference power\n\n        gr.sync_block.__init__(\n        \
+      \    self,\n            name='ZigBee Interference (Continuous)',\n         \
+      \   in_sig=None,\n            out_sig=[np.complex64]\n        )\n\n        self.samp_rate\
+      \ = samp_rate\n        self.center_freq = center_freq\n        self.chip_rate\
+      \ = chip_rate\n        self.gain = gain\n\n        # ZigBee 32-chip sequence\
+      \ (one example)\n        self.sequence = np.array(\n            [1,1,1,-1,1,1,-1,1,1,-1,-1,-1,-1,\
+      \ 1,-1, 1, 1,1,-1,-1,\n             1,-1,-1, 1,-1, 1,-1,-1,-1, 1,1,1]\n    \
+      \    )\n\n        # samples per chip ( = 2 at 4MHz SR)\n        self.sps = max(1,\
+      \ int(self.samp_rate / self.chip_rate))\n\n        # pre-generate continuous\
+      \ baseband chipstream\n        self.offset = 0\n\n\n    def work(self, input_items,\
+      \ output_items):\n        out = output_items[0]\n        n = len(out)\n\n  \
+      \      # Repeat chips enough times to fill n samples\n        repeated = np.repeat(self.sequence,\
+      \ self.sps)\n\n        # Continuous wraparound indexing\n        data = np.zeros(n,\
+      \ dtype=np.complex64)\n        for i in range(n):\n            idx = (self.offset\
+      \ + i) % len(repeated)\n            data[i] = repeated[idx]\n\n        self.offset\
+      \ = (self.offset + n) % len(repeated)\n\n        # random Q-phase (simple OQPSK-like)\n\
+      \        phase = np.exp(1j * np.pi * (np.random.rand() * 2 - 1))\n\n       \
+      \ out[:] = (data * phase * self.gain).astype(np.complex64)\n        return n\n\
+      \t\n"
+    affinity: ''
+    alias: ''
+    center_freq: int(2.44e9)
+    chip_rate: '2000000.0'
+    comment: ''
+    gain: '1.0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: int(samp_rate)
+  states:
+    _io_cache: ('ZigBee Interference (Continuous)', 'blk', [('samp_rate', '4000000.0'),
+      ('center_freq', '2440000000.0'), ('chip_rate', '2000000.0'), ('gain', '0.8')],
+      [], [('0', 'complex', 1)], 'Continuous ZigBee-like interference for 4 MHz sample
+      rate', ['center_freq', 'chip_rate', 'gain', 'samp_rate'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1368, 892.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_2
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass blk(gr.sync_block):\n\
+      \    \"\"\"BLE Burst FHSS Interference Generator (with full default values)\"\
+      \"\"\n\n    def __init__(self,\n                 samp_rate=4e6,       # Default:\
+      \ 4 MHz (works perfectly on PlutoSDR)\n                 ble_bw=1e6,        \
+      \  # Default BLE channel width\n                 hop_rate=1600,       # Default\
+      \ BLE hop rate (1600 hops/sec)\n                 burst_ms=4,          # Default\
+      \ burst length = 4 ms\n                 gain=0.8):           # Default interference\
+      \ strength\n\n        gr.sync_block.__init__(\n            self,\n         \
+      \   name='BLE FHSS Burst Interference',\n            in_sig=None,\n        \
+      \    out_sig=[np.complex64]\n        )\n\n        # Save defaults\n        self.samp_rate\
+      \ = samp_rate\n        self.ble_bw = ble_bw\n        self.hop_rate = hop_rate\n\
+      \        self.burst_ms = burst_ms\n        self.gain = gain\n\n        # Compute\
+      \ burst length in samples\n        self.burst_len = int((burst_ms / 1000.0)\
+      \ * samp_rate)\n\n        # Normalize BLE hopping positions (40 BLE channels\
+      \ across spectrum)\n        self.channels = np.linspace(-0.5, 0.5, 40)\n\n \
+      \       self.t = 0                 # time index\n        self.current_channel\
+      \ = 0   # current BLE hop index\n\n\n    def _make_ble_mask(self, n, channel_pos):\n\
+      \        \"\"\"Create BLE GFSK-like 1 MHz spectral mask centered at channel_pos.\"\
+      \"\"\n        freqs = np.linspace(-0.5, 0.5, n)\n        bw_norm = self.ble_bw\
+      \ / self.samp_rate\n        rolloff = 0.25\n\n        mask = np.zeros(n)\n \
+      \       for i, f in enumerate(freqs):\n            fshift = abs(f - channel_pos)\n\
+      \n            if fshift <= (bw_norm/2)*(1-rolloff):\n                mask[i]\
+      \ = 1.0\n            elif fshift <= (bw_norm/2)*(1+rolloff):\n             \
+      \   x = (fshift - (bw_norm/2)*(1-rolloff)) / (bw_norm*rolloff)\n           \
+      \     mask[i] = 0.5 * (1 + np.cos(np.pi * x))\n\n        return mask\n\n\n \
+      \   def work(self, input_items, output_items):\n        out = output_items[0]\n\
+      \        n = len(out)\n\n        #\n        # 1) Burst ON/OFF pattern\n    \
+      \    #\n        if (self.t // self.burst_len) % 2 == 0:\n            active\
+      \ = True\n        else:\n            active = False\n\n        #\n        #\
+      \ 2) BLE hopping logic\n        #\n        hop_interval_samples = int(self.samp_rate\
+      \ / self.hop_rate)\n        if hop_interval_samples < 1:\n            hop_interval_samples\
+      \ = 1\n\n        if self.t % hop_interval_samples == 0:\n            self.current_channel\
+      \ = np.random.randint(0, 40)\n\n        #\n        # 3) Generate white noise\
+      \ base\n        #\n        noise = (np.random.normal(0, 1, n) +\n          \
+      \       1j * np.random.normal(0, 1, n))\n\n        #\n        # 4) If burst\
+      \ active \u2192 shape interference into BLE channel\n        #\n        if active:\n\
+      \            F = np.fft.fftshift(np.fft.fft(noise))\n\n            channel_pos\
+      \ = self.channels[self.current_channel]\n            mask = self._make_ble_mask(n,\
+      \ channel_pos) * self.gain\n\n            F *= mask\n            shaped = np.fft.ifft(np.fft.ifftshift(F))\n\
+      \        else:\n            shaped = np.zeros(n, dtype=np.complex64)\n\n   \
+      \     out[:] = shaped.astype(np.complex64)\n        self.t += n\n        return\
+      \ n\n\n"
+    affinity: ''
+    alias: ''
+    ble_bw: '1000000.0'
+    burst_ms: '4'
+    comment: ''
+    gain: '0.8'
+    hop_rate: '1600'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: '4000000.0'
+  states:
+    _io_cache: ('BLE FHSS Burst Interference', 'blk', [('samp_rate', '4000000.0'),
+      ('ble_bw', '1000000.0'), ('hop_rate', '1600'), ('burst_ms', '4'), ('gain', '0.8')],
+      [], [('0', 'complex', 1)], 'BLE Burst FHSS Interference Generator (with full
+      default values)', ['ble_bw', 'burst_ms', 'gain', 'hop_rate', 'samp_rate'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1352, 1012.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_3
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass blk(gr.sync_block):\n\
+      \    \"\"\"\n    Multi-FHSS Interference Generator (Simulation Only)\n    -\
+      \ Works with QT sinks for visualization\n    - All defaults handled internally\n\
+      \    \"\"\"\n\n    def __init__(self,\n                 samp_rate=4e6,     \
+      \   # Default: 4 MHz\n                 num_hoppers=5,        # Default: 5 FHSS\
+      \ devices\n                 hop_rate=1000,        # Default: 1000 hops/sec\n\
+      \                 num_channels=40,      # Default: 40 channels\n           \
+      \      tone_bw=300e3,        # Default: 300 kHz spike width\n              \
+      \   gain=1.0):            # Default: amplitude\n\n        gr.sync_block.__init__(\n\
+      \            self,\n            name='Multi-FHSS Interference (Default)',\n\
+      \            in_sig=None,\n            out_sig=[np.complex64]\n        )\n\n\
+      \        # Store defaults\n        self.samp_rate = samp_rate\n        self.num_hoppers\
+      \ = num_hoppers\n        self.hop_rate = hop_rate\n        self.num_channels\
+      \ = num_channels\n        self.tone_bw = tone_bw\n        self.gain = gain\n\
+      \n        # Hop interval in samples\n        self.hop_interval = max(1, int(self.samp_rate\
+      \ / self.hop_rate))\n\n        # FHSS channel positions normalized (-0.5 to\
+      \ +0.5)\n        self.channels = np.linspace(-0.5, 0.5, self.num_channels)\n\
+      \n        # Per-hopper random states\n        self.current_channel = np.random.randint(0,\
+      \ self.num_channels, self.num_hoppers)\n        self.t = 0\n\n\n    def _make_mask(self,\
+      \ nfft, pos):\n        \"\"\"Gaussian spike mask at normalized channel position\
+      \ 'pos'\"\"\"\n        f = np.linspace(-0.5, 0.5, nfft)\n        bw = self.tone_bw\
+      \ / self.samp_rate\n        sigma = bw / 3\n        return np.exp(-0.5 * ((f\
+      \ - pos) / sigma) ** 2)\n\n\n    def work(self, input_items, output_items):\n\
+      \        out = output_items[0]\n        n = len(out)\n\n        result = np.zeros(n,\
+      \ dtype=np.complex64)\n\n        # Generate interference from each FHSS device\n\
+      \        for h in range(self.num_hoppers):\n\n            # Hop on boundary\n\
+      \            if self.t % self.hop_interval == 0:\n                self.current_channel[h]\
+      \ = np.random.randint(0, self.num_channels)\n\n            # Base noise\n  \
+      \          noise = (np.random.normal(0, 1, n) +\n                     1j * np.random.normal(0,\
+      \ 1, n))\n\n            # Frequency shaping\n            F = np.fft.fftshift(np.fft.fft(noise))\n\
+      \            mask = self._make_mask(n, self.channels[self.current_channel[h]])\n\
+      \            F *= mask * self.gain\n            shaped = np.fft.ifft(np.fft.ifftshift(F))\n\
+      \n            result += shaped\n\n        # Normalize\n        m = np.max(np.abs(result))\n\
+      \        if m > 0:\n            result /= m\n\n        out[:] = result.astype(np.complex64)\n\
+      \        self.t += n\n        return n\n\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    gain: '1.0'
+    hop_rate: '800'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_channels: '40'
+    num_hoppers: '5'
+    samp_rate: '4000000.0'
+    tone_bw: '300000'
+  states:
+    _io_cache: ('Multi-FHSS Interference (Default)', 'blk', [('samp_rate', '4000000.0'),
+      ('num_hoppers', '5'), ('hop_rate', '1000'), ('num_channels', '40'), ('tone_bw',
+      '300000.0'), ('gain', '1.0')], [], [('0', 'complex', 1)], '\n    Multi-FHSS
+      Interference Generator (Simulation Only)\n    - Works with QT sinks for visualization\n    -
+      All defaults handled internally\n    ', ['gain', 'hop_rate', 'num_channels',
+      'num_hoppers', 'samp_rate', 'tone_bw'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1344, 1140.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_4
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass blk(gr.sync_block):\n\
+      \    \"\"\"\n    Realistic DFS Radar Signal (Type-1)\n    Simulation-only radar\
+      \ pulses for visualization in QT sinks.\n    DEFAULT PARAMETERS IMPLEMENT FCC/ETSI\
+      \ DFS RADAR TYPE-1.\n    \"\"\"\n\n    def __init__(self,\n                \
+      \ samp_rate=20e6,          # 20 MHz required for 1 \xB5s resolution\n      \
+      \           pulse_width_us=1.0,      # Pulse width (1 \xB5s)\n             \
+      \    pulses_per_burst=9,      # DFS Type 1 = 9 pulses\n                 pri_us=1428.0,\
+      \           # Pulse Repetition Interval (1428 \xB5s)\n                 burst_interval_ms=1000,\
+      \  # One burst every 1 second\n                 radar_bw=3e6,            # ~3\
+      \ MHz radar bandwidth\n                 gain=1.0):               # amplitude\n\
+      \        gr.sync_block.__init__(\n            self,\n            name='DFS Radar\
+      \ (Type-1)',\n            in_sig=None,\n            out_sig=[np.complex64]\n\
+      \        )\n\n        # Save defaults\n        self.samp_rate = samp_rate\n\
+      \        self.pulse_width = int((pulse_width_us / 1e6) * samp_rate)\n      \
+      \  self.pulses_per_burst = pulses_per_burst\n        self.pri = int((pri_us\
+      \ / 1e6) * samp_rate)\n        self.burst_interval = int((burst_interval_ms\
+      \ / 1000.0) * samp_rate)\n        self.radar_bw = radar_bw\n        self.gain\
+      \ = gain\n\n        # Internal time index\n        self.t = 0\n\n\n    def work(self,\
+      \ input_items, output_items):\n        out = output_items[0]\n        n = len(out)\n\
+      \n        # Output buffer\n        radar = np.zeros(n, dtype=np.complex64)\n\
+      \n        # Local time vector\n        t_local = np.arange(n)\n\n        # Current\
+      \ time inside repeating burst cycle\n        cycle_pos = (self.t + t_local)\
+      \ % self.burst_interval\n\n        # For each pulse in the burst\n        for\
+      \ p in range(self.pulses_per_burst):\n            # Pulse start time in samples\n\
+      \            pulse_start = p * self.pri\n            pulse_end = pulse_start\
+      \ + self.pulse_width\n\n            # Boolean mask for pulse presence\n    \
+      \        pulse_mask = np.logical_and(cycle_pos >= pulse_start,\n           \
+      \                             cycle_pos < pulse_end)\n\n            # Radar\
+      \ pulse = complex amplitude (carrier is baseband)\n            radar[pulse_mask]\
+      \ = self.gain + 0j\n\n        # BANDWIDTH SHAPING (Radar \u2248 3 MHz)\n   \
+      \     if self.radar_bw > 0:\n            # Create colored noise\n          \
+      \  noise = (np.random.normal(0, 0.05, n) +\n                     1j * np.random.normal(0,\
+      \ 0.05, n)).astype(np.complex64)\n\n            # Shape noise with Gaussian\
+      \ spectral mask\n            freqs = np.linspace(-self.samp_rate/2, self.samp_rate/2,\
+      \ n)\n            mask = np.exp(-0.5 * (freqs / (self.radar_bw/2))**2)\n\n \
+      \           F = np.fft.fftshift(np.fft.fft(noise))\n            F *= mask\n\
+      \            shaped_noise = np.fft.ifft(np.fft.ifftshift(F))\n\n           \
+      \ radar += shaped_noise.astype(np.complex64)\n\n        # Write output\n   \
+      \     out[:] = radar\n        self.t += n\n        return n\n\n"
+    affinity: ''
+    alias: ''
+    burst_interval_ms: '1000'
+    comment: ''
+    gain: '3.0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pri_us: '1428.0'
+    pulse_width_us: '1.0'
+    pulses_per_burst: '9'
+    radar_bw: '3000000.0'
+    samp_rate: '20000000.0'
+  states:
+    _io_cache: ('DFS Radar (Type-1)', 'blk', [('samp_rate', '20000000.0'), ('pulse_width_us',
+      '1.0'), ('pulses_per_burst', '9'), ('pri_us', '1428.0'), ('burst_interval_ms',
+      '1000'), ('radar_bw', '3000000.0'), ('gain', '1.0')], [], [('0', 'complex',
+      1)], '\n    Realistic DFS Radar Signal (Type-1)\n    Simulation-only radar pulses
+      for visualization in QT sinks.\n    DEFAULT PARAMETERS IMPLEMENT FCC/ETSI DFS
+      RADAR TYPE-1.\n    ', ['gain', 'pulses_per_burst', 'radar_bw', 'samp_rate'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [176, 716.0]
+    rotation: 0
+    state: disabled
+- name: epy_block_5
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass blk(gr.sync_block):\n\
+      \    \"\"\"\n    Realistic DFS Radar Type-2 (FCC / ETSI Standard)\n    - Pulse\
+      \ width: 5 us\n    - PRI: 200 us\n    - Pulses per burst: 10\n    - Burst interval:\
+      \ 250 ms\n    - Bandwidth ~6 MHz\n    \"\"\"\n\n    def __init__(self,\n   \
+      \              samp_rate=20e6,          # 20 MHz required for 5 us pulse shaping\n\
+      \                 center_freq=5260e6,      # visual center frequency\n     \
+      \            pulse_width_us=5.0,      # DFS Type-2 official value: 5 us\n  \
+      \               pri_us=200.0,            # PRI = 200 us\n                 pulses_per_burst=10,\
+      \     # Type-2: 8\u201320; default = 10\n                 burst_interval_ms=250,\
+      \   # DFS standard: 250 ms burst interval\n                 radar_bw=6e6,  \
+      \          # ~6 MHz radar spectral width\n                 amplitude=1.0,  \
+      \         # pulse amplitude\n                 phase_mod=True):         # phase\
+      \ jitter for realism\n\n        gr.sync_block.__init__(\n            self,\n\
+      \            name='DFS Radar Type-2 (Realistic Default)',\n            in_sig=None,\n\
+      \            out_sig=[np.complex64]\n        )\n\n        self.samp_rate = float(samp_rate)\n\
+      \        self.center_freq = float(center_freq)\n        self.pulse_width = max(1,\
+      \ int((pulse_width_us / 1e6) * self.samp_rate))\n        self.pulses_per_burst\
+      \ = int(pulses_per_burst)\n        self.pri = max(1, int((pri_us / 1e6) * self.samp_rate))\n\
+      \        self.burst_interval = max(1, int((burst_interval_ms / 1000.0) * self.samp_rate))\n\
+      \        self.radar_bw = float(radar_bw)\n        self.amplitude = float(amplitude)\n\
+      \        self.phase_mod = bool(phase_mod)\n\n        self.t = 0  # time counter\n\
+      \n    def _make_pulse(self, length):\n        \"\"\"Generate a realistic 5-us\
+      \ radar pulse with FM jitter and shaping.\"\"\"\n        win = np.hanning(length\
+      \ * 2)[0:length]\n        tvec = np.arange(length) / self.samp_rate\n\n    \
+      \    # Tiny chirp inside pulse\n        chirp_bw = self.radar_bw * 0.15  # small\
+      \ fraction of radar BW\n        k = chirp_bw / (length / self.samp_rate)\n \
+      \       phase = 2*np.pi * (0.5 * k * tvec**2)\n\n        if self.phase_mod:\n\
+      \            phase += np.random.randn(length) * 0.02\n\n        pulse = (self.amplitude\
+      \ * win) * np.exp(1j * phase)\n\n        return pulse.astype(np.complex64)\n\
+      \n    def work(self, input_items, output_items):\n        out = output_items[0]\n\
+      \        n = len(out)\n        buf = np.zeros(n, dtype=np.complex64)\n\n   \
+      \     t_local = self.t + np.arange(n)\n        cycle_pos = t_local % self.burst_interval\n\
+      \n        for p in range(self.pulses_per_burst):\n            start = p * self.pri\n\
+      \            end = start + self.pulse_width\n\n            mask = np.logical_and(cycle_pos\
+      \ >= start, cycle_pos < end)\n            if not np.any(mask):\n           \
+      \     continue\n\n            pulse = self._make_pulse(self.pulse_width)\n \
+      \           idx = np.where(mask)[0]\n            pos = (cycle_pos[idx] - start).astype(int)\n\
+      \            buf[idx] += pulse[pos]\n\n        # add light clutter noise (band-limited)\n\
+      \        noise = (np.random.normal(0, 0.005, n) +\n                 1j * np.random.normal(0,\
+      \ 0.005, n))\n\n        F = np.fft.fftshift(np.fft.fft(noise))\n        freqs\
+      \ = np.linspace(-0.5, 0.5, n, endpoint=False) * self.samp_rate\n        sigma\
+      \ = self.radar_bw / 2\n        mask = np.exp(-0.5 * (freqs / sigma)**2)\n  \
+      \      F *= mask\n        clutter = np.fft.ifft(np.fft.ifftshift(F))\n\n   \
+      \     buf += 0.05 * clutter.astype(np.complex64)\n\n        out[:] = buf\n \
+      \       self.t += n\n        return n\n\n"
+    affinity: ''
+    alias: ''
+    amplitude: '1.0'
+    burst_interval_ms: '250'
+    center_freq: '5260000000.0'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    phase_mod: 'True'
+    pri_us: '200.0'
+    pulse_width_us: '5.0'
+    pulses_per_burst: '10'
+    radar_bw: '6000000.0'
+    samp_rate: '20000000.0'
+  states:
+    _io_cache: '(''DFS Radar Type-2 (Realistic Default)'', ''blk'', [(''samp_rate'',
+      ''20000000.0''), (''center_freq'', ''5260000000.0''), (''pulse_width_us'', ''5.0''),
+      (''pri_us'', ''200.0''), (''pulses_per_burst'', ''10''), (''burst_interval_ms'',
+      ''250''), (''radar_bw'', ''6000000.0''), (''amplitude'', ''1.0''), (''phase_mod'',
+      ''True'')], [], [(''0'', ''complex'', 1)], ''\n    Realistic DFS Radar Type-2
+      (FCC / ETSI Standard)\n    - Pulse width: 5 us\n    - PRI: 200 us\n    - Pulses
+      per burst: 10\n    - Burst interval: 250 ms\n    - Bandwidth ~6 MHz\n    '',
+      [''amplitude'', ''center_freq'', ''phase_mod'', ''pulses_per_burst'', ''radar_bw'',
+      ''samp_rate''])'
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [48, 1020.0]
+    rotation: 0
+    state: disabled
+- name: epy_block_6
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass blk(gr.sync_block):\n\
+      \    \"\"\"\n    DFS Radar Combo (Type-1 + Type-2)\n    REALISTIC DEFAULT VALUES\
+      \ (FCC/ETSI)\n    - Alternates Type-1 and Type-2 radar every 1 second\n    -\
+      \ Type-1: 1us PW, 9 pulses, 1428us PRI, 1s interval\n    - Type-2: 5us PW, 10\
+      \ pulses, 200us PRI, 250ms interval\n    - Simulation-only, safe for QT sinks\n\
+      \    \"\"\"\n\n    def __init__(self,\n                 samp_rate=20e6,    \
+      \         # REQUIRED for microsecond pulses\n                 switch_interval_s=1.0,\
+      \      # switch radar mode every 1 second\n\n                 # ---------- TYPE\
+      \ 1 DEFAULTS ----------\n                 t1_pulse_width_us=1.0,      # 1 \xB5\
+      s\n                 t1_pulses_per_burst=9,      # 9 pulses\n               \
+      \  t1_pri_us=1428.0,           # 1428 \xB5s PRI\n                 t1_burst_interval_ms=1000,\
+      \  # burst every 1 sec\n                 t1_bw=3e6,                  # 3 MHz\
+      \ radar BW\n\n                 # ---------- TYPE 2 DEFAULTS ----------\n   \
+      \              t2_pulse_width_us=5.0,      # 5 \xB5s\n                 t2_pulses_per_burst=10,\
+      \     # 10 pulses\n                 t2_pri_us=200.0,            # 200 \xB5s\
+      \ PRI\n                 t2_burst_interval_ms=250,   # burst every 0.25 sec\n\
+      \                 t2_bw=6e6,                  # 6 MHz radar BW\n\n         \
+      \        amplitude=1.0):              # default power\n        gr.sync_block.__init__(\n\
+      \            self,\n            name='DFS Radar Combo (Type1+Type2)',\n    \
+      \        in_sig=None,\n            out_sig=[np.complex64]\n        )\n\n   \
+      \     self.samp_rate = float(samp_rate)\n        self.switch_interval = int(samp_rate\
+      \ * switch_interval_s)\n        self.amplitude = float(amplitude)\n\n      \
+      \  # Store Type-1 parameters\n        self.t1_pw = int((t1_pulse_width_us/1e6)*samp_rate)\n\
+      \        self.t1_ppb = int(t1_pulses_per_burst)\n        self.t1_pri = int((t1_pri_us/1e6)*samp_rate)\n\
+      \        self.t1_burst = int((t1_burst_interval_ms/1000.0)*samp_rate)\n    \
+      \    self.t1_bw = float(t1_bw)\n\n        # Store Type-2 parameters\n      \
+      \  self.t2_pw = int((t2_pulse_width_us/1e6)*samp_rate)\n        self.t2_ppb\
+      \ = int(t2_pulses_per_burst)\n        self.t2_pri = int((t2_pri_us/1e6)*samp_rate)\n\
+      \        self.t2_burst = int((t2_burst_interval_ms/1000.0)*samp_rate)\n    \
+      \    self.t2_bw = float(t2_bw)\n\n        self.t = 0  # internal time counter\n\
+      \n    # --------------------------------------------------------------------\n\
+      \    def _make_pulse(self, length, bw):\n        \"\"\"Generate a shaped radar\
+      \ pulse with small chirp.\"\"\"\n        win = np.hanning(length*2)[0:length]\n\
+      \        tvec = np.arange(length) / self.samp_rate\n\n        # small chirp\
+      \ for realism\n        chirp_bw = bw * 0.1\n        k = chirp_bw / (length /\
+      \ self.samp_rate)\n        phase = 2*np.pi * (0.5*k*tvec*tvec)\n\n        pulse\
+      \ = (self.amplitude * win) * np.exp(1j*phase)\n\n        # tiny noise for realism\n\
+      \        pulse += (np.random.randn(length)*0.01 + 1j*np.random.randn(length)*0.01)\n\
+      \n        return pulse.astype(np.complex64)\n\n    # --------------------------------------------------------------------\n\
+      \    def _place_radar(self, buf, t_local, pw, ppb, pri, burst_interval, bw):\n\
+      \        \"\"\"Place burst pulses into the buffer for one radar type.\"\"\"\n\
+      \        cycle_pos = t_local % burst_interval\n        template = self._make_pulse(pw,\
+      \ bw)\n\n        for p in range(ppb):\n            start = p * pri\n       \
+      \     end = start + pw\n\n            mask = np.logical_and(cycle_pos >= start,\
+      \ cycle_pos < end)\n            if not np.any(mask):\n                continue\n\
+      \n            idx = np.where(mask)[0]\n            pos = ((cycle_pos[idx]-start).astype(int))\n\
+      \            pos = np.clip(pos, 0, pw-1)\n\n            buf[idx] += template[pos]\n\
+      \n        return buf\n\n    # --------------------------------------------------------------------\n\
+      \    def work(self, input_items, output_items):\n        out = output_items[0]\n\
+      \        n = len(out)\n        t_local = self.t + np.arange(n)\n\n        buf\
+      \ = np.zeros(n, dtype=np.complex64)\n\n        # Decide current mode (Type1\
+      \ or Type2)\n        mode = (self.t // self.switch_interval) % 2\n\n       \
+      \ if mode == 0:\n            # ---------------- TYPE 1 ACTIVE ----------------\n\
+      \            buf = self._place_radar(\n                buf, t_local,\n     \
+      \           self.t1_pw, self.t1_ppb,\n                self.t1_pri, self.t1_burst,\
+      \ self.t1_bw\n            )\n        else:\n            # ---------------- TYPE\
+      \ 2 ACTIVE ----------------\n            buf = self._place_radar(\n        \
+      \        buf, t_local,\n                self.t2_pw, self.t2_ppb,\n         \
+      \       self.t2_pri, self.t2_burst, self.t2_bw\n            )\n\n        out[:]\
+      \ = buf\n        self.t += n\n        return n\n\n"
+    affinity: ''
+    alias: ''
+    amplitude: '1.0'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: '20000000.0'
+    switch_interval_s: '1.0'
+    t1_burst_interval_ms: '1000'
+    t1_bw: '3000000.0'
+    t1_pri_us: '1428.0'
+    t1_pulse_width_us: '1.0'
+    t1_pulses_per_burst: '9'
+    t2_burst_interval_ms: '250'
+    t2_bw: '6000000.0'
+    t2_pri_us: '200.0'
+    t2_pulse_width_us: '5.0'
+    t2_pulses_per_burst: '10'
+  states:
+    _io_cache: '(''DFS Radar Combo (Type1+Type2)'', ''blk'', [(''samp_rate'', ''20000000.0''),
+      (''switch_interval_s'', ''1.0''), (''t1_pulse_width_us'', ''1.0''), (''t1_pulses_per_burst'',
+      ''9''), (''t1_pri_us'', ''1428.0''), (''t1_burst_interval_ms'', ''1000''), (''t1_bw'',
+      ''3000000.0''), (''t2_pulse_width_us'', ''5.0''), (''t2_pulses_per_burst'',
+      ''10''), (''t2_pri_us'', ''200.0''), (''t2_burst_interval_ms'', ''250''), (''t2_bw'',
+      ''6000000.0''), (''amplitude'', ''1.0'')], [], [(''0'', ''complex'', 1)], ''\n    DFS
+      Radar Combo (Type-1 + Type-2)\n    REALISTIC DEFAULT VALUES (FCC/ETSI)\n    -
+      Alternates Type-1 and Type-2 radar every 1 second\n    - Type-1: 1us PW, 9 pulses,
+      1428us PRI, 1s interval\n    - Type-2: 5us PW, 10 pulses, 200us PRI, 250ms interval\n    -
+      Simulation-only, safe for QT sinks\n    '', [''amplitude'', ''samp_rate'', ''t1_bw'',
+      ''t2_bw''])'
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [328, 1188.0]
+    rotation: 0
+    state: disabled
+- name: epy_block_7
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\n\"\"\"\nIntermittent\
+      \ Interference Injector\n- Supports mixed + pure injections\n- Creates its log\
+      \ file automatically\n- Safe logging & fallback\n\"\"\"\n\nimport numpy as np\n\
+      import json\nimport os\nimport math\nimport sys\nimport traceback\nfrom datetime\
+      \ import datetime, timezone\nfrom gnuradio import gr\n\n\nINTERFERENCE_MAP =\
+      \ {\n    0: \"Microwave\",\n    1: \"Zigbee\",\n    2: \"BLE_burst\",\n    3:\
+      \ \"FHSS\"\n}\n\n\nclass blk(gr.sync_block):\n\n    def __init__(self,\n   \
+      \              example_param=1.0,\n                 sample_rate=1e6,\n     \
+      \            mean_interval_seconds=1.0,\n                 inject_duration_seconds=0.1,\n\
+      \                 log_path=\"/tmp/Injection_2_4.jsonl\",\n                 log_every_injection=True,\n\
+      \                 output_when_idle=\"zeros\",\n                 pure_inject_enabled=True,\n\
+      \                 pure_injection_probability=0.01,\n                 pure_inject_duration_seconds=20.0):\n\
+      \n        gr.sync_block.__init__(\n            self,\n            name='Intermittent\
+      \ Interference Injector (stable)',\n            in_sig=[np.complex64, np.complex64,\
+      \ np.complex64, np.complex64],\n            out_sig=[np.complex64]\n       \
+      \ )\n\n        self.example_param = example_param\n        self.sample_rate\
+      \ = float(sample_rate)\n        self.mean_interval_seconds = float(mean_interval_seconds)\n\
+      \        self.inject_duration_seconds = float(inject_duration_seconds)\n   \
+      \     self.log_path = str(log_path)\n        self.log_every_injection = bool(log_every_injection)\n\
+      \        self.output_when_idle = str(output_when_idle)\n\n        self.pure_inject_enabled\
+      \ = bool(pure_inject_enabled)\n        self.pure_injection_probability = float(pure_injection_probability)\n\
+      \        self.pure_inject_duration_seconds = float(pure_inject_duration_seconds)\n\
+      \n        self._time_accumulator_seconds = 0.0\n        self._injection_remaining_seconds\
+      \ = 0.0\n        self._next_wait_seconds = self._sample_next_wait()\n      \
+      \  self._current_coeffs = None\n        self._injection_id = 0\n        self._is_current_pure\
+      \ = False\n        self._pure_source_index = None\n\n        self._prepare_log_file()\n\
+      \n    # -------------------------------------------------------------------------\n\
+      \    # LOG FILE SETUP\n    # -------------------------------------------------------------------------\n\
+      \    def _prepare_log_file(self):\n        \"\"\"Ensures directory exists and\
+      \ log file is creatable.\"\"\"\n\n        try:\n            log_dir = os.path.dirname(os.path.abspath(self.log_path))\n\
+      \            if log_dir and not os.path.exists(log_dir):\n                os.makedirs(log_dir,\
+      \ exist_ok=True)\n\n        except Exception:\n            print(\"[Injector]\
+      \ Failed to create log directory:\", log_dir, file=sys.stderr)\n           \
+      \ traceback.print_exc(file=sys.stderr)\n\n        # test create the file\n \
+      \       try:\n            with open(self.log_path, \"a\", encoding=\"utf-8\"\
+      ) as f:\n                f.write(\"\")     # touch file\n                f.flush()\n\
+      \                os.fsync(f.fileno())\n        except Exception:\n         \
+      \   print(\"[Injector] Cannot create log file at:\", self.log_path, file=sys.stderr)\n\
+      \            traceback.print_exc(file=sys.stderr)\n\n            # fallback\
+      \ to /tmp\n            fallback = \"/tmp/Injection_2_4.jsonl\"\n           \
+      \ print(\"[Injector] Switching to fallback:\", fallback, file=sys.stderr)\n\
+      \            self.log_path = fallback\n\n            with open(self.log_path,\
+      \ \"a\", encoding=\"utf-8\") as f:\n                f.write(\"\")\n        \
+      \        f.flush()\n\n    # -------------------------------------------------------------------------\n\
+      \    def _sample_next_wait(self):\n        return np.random.exponential(max(1e-12,\
+      \ self.mean_interval_seconds))\n\n    def _write_log(self, record):\n      \
+      \  try:\n            with open(self.log_path, \"a\", encoding=\"utf-8\") as\
+      \ f:\n                f.write(json.dumps(record, default=str) + \"\\n\")\n \
+      \               f.flush()\n                try:\n                    os.fsync(f.fileno())\n\
+      \                except Exception:\n                    pass\n        except\
+      \ Exception:\n            print(\"[Injector] Log write failed at:\", self.log_path,\
+      \ file=sys.stderr)\n            traceback.print_exc(file=sys.stderr)\n\n   \
+      \ # -------------------------------------------------------------------------\n\
+      \    def _start_injection(self):\n\n        self._injection_id += 1\n      \
+      \  self._is_current_pure = False\n        self._pure_source_index = None\n\n\
+      \        will_pure = False\n        if self.pure_inject_enabled:\n         \
+      \   if np.random.random() < self.pure_injection_probability:\n             \
+      \   will_pure = True\n\n        # PURE INJECTION\n        if will_pure:\n  \
+      \          idx = int(np.random.randint(0, 4))\n            self._pure_source_index\
+      \ = idx\n            self._is_current_pure = True\n\n            coeffs = np.zeros(4)\n\
+      \            coeffs[idx] = 1.0\n            self._current_coeffs = coeffs\n\n\
+      \            self._injection_remaining_seconds = float(self.pure_inject_duration_seconds)\n\
+      \n        else:\n            # MIXED INJECTION\n            coeffs = np.random.random(4)\n\
+      \            s = np.sum(coeffs)\n            coeffs = coeffs / max(s, 1e-12)\n\
+      \            self._current_coeffs = coeffs\n\n            self._injection_remaining_seconds\
+      \ = float(self.inject_duration_seconds)\n\n        # Log\n        if self.log_every_injection:\n\
+      \            dom = int(np.argmax(self._current_coeffs))\n            record\
+      \ = {\n                \"injection_id\": self._injection_id,\n             \
+      \   \"start_time_utc\": datetime.now(timezone.utc).isoformat(),\n          \
+      \      \"is_pure_injection\": self._is_current_pure,\n                \"pure_source_index\"\
+      : None if not self._is_current_pure else int(self._pure_source_index),\n   \
+      \             \"pure_source_type\": None if not self._is_current_pure else INTERFERENCE_MAP[self._pure_source_index],\n\
+      \                \"duration_seconds\": float(self._injection_remaining_seconds),\n\
+      \                \"coefficients\": {\n                    \"Microwave\": float(self._current_coeffs[0]),\n\
+      \                    \"Zigbee\": float(self._current_coeffs[1]),\n         \
+      \           \"BLE_burst\": float(self._current_coeffs[2]),\n               \
+      \     \"FHSS\": float(self._current_coeffs[3])\n                },\n       \
+      \         \"dominant_type\": INTERFERENCE_MAP.get(dom, \"unknown\")\n      \
+      \      }\n            self._write_log(record)\n\n        # prepare next wait\n\
+      \        self._time_accumulator_seconds = 0.0\n        self._next_wait_seconds\
+      \ = self._sample_next_wait()\n\n    # -------------------------------------------------------------------------\n\
+      \    # MAIN WORK FUNCTION\n    # -------------------------------------------------------------------------\n\
+      \    def work(self, input_items, output_items):\n\n        in0, in1, in2, in3\
+      \ = input_items\n        n = min(len(in0), len(in1), len(in2), len(in3))\n \
+      \       if n <= 0:\n            return 0\n\n        elapsed_seconds = n / self.sample_rate\n\
+      \        out = np.zeros(n, dtype=np.complex64)\n\n        samples_done = 0\n\
+      \        remaining = n\n        local_time = 0.0\n\n        while remaining\
+      \ > 0:\n\n            # ------------------ IDLE STATE ------------------\n \
+      \           if self._injection_remaining_seconds <= 0.0:\n\n               \
+      \ wait_left = self._next_wait_seconds - self._time_accumulator_seconds\n   \
+      \             wait_left = max(0.0, wait_left)\n\n                if local_time\
+      \ + wait_left < elapsed_seconds:\n                    seg_sec = wait_left\n\
+      \                    seg_samples = max(1, int(seg_sec * self.sample_rate))\n\
+      \                    seg_samples = min(seg_samples, remaining)\n\n         \
+      \           # idle: passthrough or zeros\n                    if self.output_when_idle\
+      \ == \"passthrough\":\n                        out[samples_done:samples_done+seg_samples]\
+      \ = (\n                            in0[samples_done:samples_done+seg_samples]\
+      \ +\n                            in1[samples_done:samples_done+seg_samples]\
+      \ +\n                            in2[samples_done:samples_done+seg_samples]\
+      \ +\n                            in3[samples_done:samples_done+seg_samples]\n\
+      \                        ) / 4.0\n                    else:\n              \
+      \          out[samples_done:samples_done+seg_samples] = 0\n\n              \
+      \      time_used = seg_samples / self.sample_rate\n                    self._time_accumulator_seconds\
+      \ += time_used\n                    local_time += time_used\n              \
+      \      samples_done += seg_samples\n                    remaining -= seg_samples\n\
+      \n                    if self._time_accumulator_seconds >= self._next_wait_seconds:\n\
+      \                        self._start_injection()\n\n                else:\n\
+      \                    # rest entire block idle\n                    if self.output_when_idle\
+      \ == \"passthrough\":\n                        out[samples_done:samples_done+remaining]\
+      \ = (\n                            in0[samples_done:samples_done+remaining]\
+      \ +\n                            in1[samples_done:samples_done+remaining] +\n\
+      \                            in2[samples_done:samples_done+remaining] +\n  \
+      \                          in3[samples_done:samples_done+remaining]\n      \
+      \                  ) / 4.0\n                    else:\n                    \
+      \    out[samples_done:samples_done+remaining] = 0\n\n                    time_used\
+      \ = remaining / self.sample_rate\n                    self._time_accumulator_seconds\
+      \ += time_used\n                    local_time += time_used\n              \
+      \      samples_done += remaining\n                    remaining = 0\n      \
+      \              break\n\n            # ------------------ ACTIVE INJECTION ------------------\n\
+      \            else:\n                seg_sec = min(self._injection_remaining_seconds,\n\
+      \                              elapsed_seconds - local_time)\n             \
+      \   seg_samples = max(1, int(seg_sec * self.sample_rate))\n                seg_samples\
+      \ = min(seg_samples, remaining)\n\n                a, b, c, d = self._current_coeffs\n\
+      \n                if self._is_current_pure:\n                    idx = self._pure_source_index\n\
+      \                    if idx == 0:\n                        out[samples_done:samples_done+seg_samples]\
+      \ = in0[samples_done:samples_done+seg_samples]\n                    elif idx\
+      \ == 1:\n                        out[samples_done:samples_done+seg_samples]\
+      \ = in1[samples_done:samples_done+seg_samples]\n                    elif idx\
+      \ == 2:\n                        out[samples_done:samples_done+seg_samples]\
+      \ = in2[samples_done:samples_done+seg_samples]\n                    else:\n\
+      \                        out[samples_done:samples_done+seg_samples] = in3[samples_done:samples_done+seg_samples]\n\
+      \n                else:\n                    out[samples_done:samples_done+seg_samples]\
+      \ = (\n                        a * in0[samples_done:samples_done+seg_samples]\
+      \ +\n                        b * in1[samples_done:samples_done+seg_samples]\
+      \ +\n                        c * in2[samples_done:samples_done+seg_samples]\
+      \ +\n                        d * in3[samples_done:samples_done+seg_samples]\n\
+      \                    )\n\n                used = seg_samples / self.sample_rate\n\
+      \                self._injection_remaining_seconds -= used\n               \
+      \ local_time += used\n                samples_done += seg_samples\n        \
+      \        remaining -= seg_samples\n\n                if self._injection_remaining_seconds\
+      \ <= 0.0:\n                    self._current_coeffs = None\n               \
+      \     self._is_current_pure = False\n                    self._pure_source_index\
+      \ = None\n                    self._time_accumulator_seconds = 0.0\n\n     \
+      \   output_items[0][:n] = out\n        return n\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    example_param: '1.0'
+    inject_duration_seconds: '10'
+    log_every_injection: '"True"'
+    log_path: '"Injection_2_4.jsonl"'
+    maxoutbuf: '0'
+    mean_interval_seconds: '300'
+    minoutbuf: '0'
+    output_when_idle: '"Zeros"'
+    pure_inject_duration_seconds: '20'
+    pure_inject_enabled: 'True'
+    pure_injection_probability: '1'
+    sample_rate: samp_rate
+  states:
+    _io_cache: ('Intermittent Interference Injector (stable)', 'blk', [('example_param',
+      '1.0'), ('sample_rate', '1000000.0'), ('mean_interval_seconds', '1.0'), ('inject_duration_seconds',
+      '0.1'), ('log_path', "'/tmp/Injection_2_4.jsonl'"), ('log_every_injection',
+      'True'), ('output_when_idle', "'zeros'"), ('pure_inject_enabled', 'True'), ('pure_injection_probability',
+      '0.01'), ('pure_inject_duration_seconds', '20.0')], [('0', 'complex', 1), ('1',
+      'complex', 1), ('2', 'complex', 1), ('3', 'complex', 1)], [('0', 'complex',
+      1)], '', ['example_param', 'inject_duration_seconds', 'log_every_injection',
+      'log_path', 'mean_interval_seconds', 'output_when_idle', 'pure_inject_duration_seconds',
+      'pure_inject_enabled', 'pure_injection_probability', 'sample_rate'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1672, 956.0]
+    rotation: 0
+    state: enabled
+- name: iio_pluto_sink_0
+  id: iio_pluto_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    attenuation1: '5.0'
+    bandwidth: '20000000'
+    buffer_size: '32768'
+    comment: ''
+    cyclic: 'True'
+    filter: ''
+    filter_source: '''Auto'''
+    fpass: '0'
+    frequency: Injection_Frequency
+    fstop: '0'
+    len_tag_key: ''
+    samplerate: int(samp_rate)
+    type: fc32
+    uri: 192.168.2.1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2008, 988.0]
+    rotation: 0
+    state: enabled
+- name: iio_pluto_source_0
+  id: iio_pluto_source
+  parameters:
+    affinity: ''
+    alias: ''
+    bandwidth: '20000000'
+    bbdc: 'True'
+    buffer_size: '32768'
+    comment: ''
+    filter: ''
+    filter_source: '''Auto'''
+    fpass: '0'
+    frequency: Injection_Frequency
+    fstop: '0'
+    gain1: '''slow_attack'''
+    len_tag_key: packet_len
+    manual_gain1: '64'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    quadrature: 'True'
+    rfdc: 'True'
+    samplerate: int(samp_rate)
+    type: fc32
+    uri: 192.168.2.1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2040, 692.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_eye_sink_x_0
+  id: qtgui_eye_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    axislabels: 'True'
+    color1: blue
+    color10: blue
+    color2: blue
+    color3: blue
+    color4: blue
+    color5: blue
+    color6: blue
+    color7: blue
+    color8: blue
+    color9: blue
+    comment: ''
+    ctrlpanel: 'False'
+    entags: 'True'
+    grid: 'True'
+    gui_hint: ''
+    label1: Signal 1
+    label10: Signal 10
+    label2: Signal 2
+    label3: Signal 3
+    label4: Signal 4
+    label5: Signal 5
+    label6: Signal 6
+    label7: Signal 7
+    label8: Signal 8
+    label9: Signal 9
+    legend: 'True'
+    marker1: '-1'
+    marker10: '-1'
+    marker2: '-1'
+    marker3: '-1'
+    marker4: '-1'
+    marker5: '-1'
+    marker6: '-1'
+    marker7: '-1'
+    marker8: '-1'
+    marker9: '-1'
+    nconnections: '1'
+    samp_per_symbol: '4'
+    size: '1024'
+    srate: samp_rate
+    style1: '1'
+    style10: '1'
+    style2: '1'
+    style3: '1'
+    style4: '1'
+    style5: '1'
+    style6: '1'
+    style7: '1'
+    style8: '1'
+    style9: '1'
+    tr_chan: '0'
+    tr_delay: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_slope: qtgui.TRIG_SLOPE_POS
+    tr_tag: '""'
+    type: complex
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    ylabel: Amplitude
+    ymax: '1'
+    ymin: '-1'
+    yunit: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2456, 1020.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_freq_sink_x_0_0
+  id: qtgui_freq_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    axislabels: 'True'
+    bw: samp_rate
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    ctrlpanel: 'False'
+    fc: Injection_Frequency
+    fftsize: '1024'
+    freqhalf: 'True'
+    grid: 'False'
+    gui_hint: ''
+    label: Relative Gain
+    label1: ''
+    label10: ''''''
+    label2: ''''''
+    label3: ''''''
+    label4: ''''''
+    label5: ''''''
+    label6: ''''''
+    label7: ''''''
+    label8: ''''''
+    label9: ''''''
+    legend: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '"Recieved Watterfall Plot"'
+    nconnections: '1'
+    norm_window: 'False'
+    showports: 'False'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_tag: '""'
+    type: complex
+    units: dB
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    wintype: window.WIN_BLACKMAN_hARRIS
+    ymax: '10'
+    ymin: '-140'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2448, 900.0]
+    rotation: 0
+    state: disabled
+- name: qtgui_time_sink_x_0_0
+  id: qtgui_time_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    axislabels: 'True'
+    color1: blue
+    color10: dark blue
+    color2: red
+    color3: green
+    color4: black
+    color5: cyan
+    color6: magenta
+    color7: yellow
+    color8: dark red
+    color9: dark green
+    comment: ''
+    ctrlpanel: 'False'
+    entags: 'True'
+    grid: 'False'
+    gui_hint: ''
+    label1: Signal 1
+    label10: Signal 10
+    label2: Signal 2
+    label3: Signal 3
+    label4: Signal 4
+    label5: Signal 5
+    label6: Signal 6
+    label7: Signal 7
+    label8: Signal 8
+    label9: Signal 9
+    legend: 'True'
+    marker1: '-1'
+    marker10: '-1'
+    marker2: '-1'
+    marker3: '-1'
+    marker4: '-1'
+    marker5: '-1'
+    marker6: '-1'
+    marker7: '-1'
+    marker8: '-1'
+    marker9: '-1'
+    name: '"Recived Time Domain"'
+    nconnections: '1'
+    size: '1024'
+    srate: samp_rate
+    stemplot: 'False'
+    style1: '1'
+    style10: '1'
+    style2: '1'
+    style3: '1'
+    style4: '1'
+    style5: '1'
+    style6: '1'
+    style7: '1'
+    style8: '1'
+    style9: '1'
+    tr_chan: '0'
+    tr_delay: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_slope: qtgui.TRIG_SLOPE_POS
+    tr_tag: '""'
+    type: complex
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    ylabel: Amplitude
+    ymax: '1'
+    ymin: '-1'
+    yunit: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2464, 676.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_waterfall_sink_x_0_0
+  id: qtgui_waterfall_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    axislabels: 'True'
+    bw: samp_rate
+    color1: '0'
+    color10: '0'
+    color2: '0'
+    color3: '0'
+    color4: '0'
+    color5: '0'
+    color6: '0'
+    color7: '0'
+    color8: '0'
+    color9: '0'
+    comment: ''
+    fc: Injection_Frequency
+    fftsize: '1024'
+    freqhalf: 'True'
+    grid: 'False'
+    gui_hint: ''
+    int_max: '10'
+    int_min: '-140'
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    legend: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '"Recieved Frequency Domain"'
+    nconnections: '1'
+    showports: 'False'
+    type: complex
+    update_time: '0.10'
+    wintype: window.WIN_BLACKMAN_hARRIS
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2448, 780.0]
+    rotation: 0
+    state: enabled
+
+connections:
+- [epy_block_0, '0', epy_block_7, '0']
+- [epy_block_1, '0', epy_block_7, '1']
+- [epy_block_2, '0', epy_block_7, '2']
+- [epy_block_3, '0', epy_block_7, '3']
+- [epy_block_7, '0', iio_pluto_sink_0, '0']
+- [iio_pluto_source_0, '0', qtgui_eye_sink_x_0, '0']
+- [iio_pluto_source_0, '0', qtgui_freq_sink_x_0_0, '0']
+- [iio_pluto_source_0, '0', qtgui_time_sink_x_0_0, '0']
+- [iio_pluto_source_0, '0', qtgui_waterfall_sink_x_0_0, '0']
+
+metadata:
+  file_format: 1
+  grc_version: 3.10.12.0

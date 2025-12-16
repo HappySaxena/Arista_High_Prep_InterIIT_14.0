@@ -1,0 +1,407 @@
+{"ts": 1764933702.8432746, "step": 0, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 0}}
+{"ts": 1764933732.8464258, "step": 1, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764933762.8469918, "step": 2, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764933792.8476841, "step": 3, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764933822.8494508, "step": 4, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 2, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764933822.8490975, "action": "set_channel", "value": 2}}}
+{"ts": 1764933822.8498595, "step": 4, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764933852.8506181, "step": 5, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap2", "type": "channel", "value": 7, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap2", "mqtt_payload": {"ap_id": "ap2", "ts": 1764933852.850411, "action": "set_channel", "value": 7}}}
+{"ts": 1764933852.8509128, "step": 5, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764933882.8524284, "step": 6, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 8, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764933882.8521702, "action": "set_channel", "value": 8}}}
+{"ts": 1764933882.8528533, "step": 6, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764933912.8532906, "step": 7, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764933942.8541067, "step": 8, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764933972.854585, "step": 9, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934002.8552387, "step": 10, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934032.8561292, "step": 11, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934062.8565786, "step": 12, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934092.8570158, "step": 13, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934122.8580618, "step": 14, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934152.8589551, "step": 15, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934182.8598518, "step": 16, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934212.86036, "step": 17, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934242.861076, "step": 18, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934272.8619537, "step": 19, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934302.8629637, "step": 20, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934332.8634965, "step": 21, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934362.864089, "step": 22, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934392.864625, "step": 23, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934422.8661911, "step": 24, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 9, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764934422.8659751, "action": "set_channel", "value": 9}}}
+{"ts": 1764934422.8666258, "step": 24, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764934452.8673737, "step": 25, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934482.8688946, "step": 26, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 2, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764934482.8685794, "action": "set_channel", "value": 2}}}
+{"ts": 1764934482.8693225, "step": 26, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764934512.8700414, "step": 27, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934542.8710966, "step": 28, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934572.8716033, "step": 29, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934602.8720345, "step": 30, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934632.8727076, "step": 31, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934662.8735125, "step": 32, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934692.8744469, "step": 33, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934722.8753433, "step": 34, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934752.8762305, "step": 35, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934782.8770666, "step": 36, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934812.8779542, "step": 37, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934842.8788779, "step": 38, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934872.879909, "step": 39, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934902.880536, "step": 40, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934932.8812325, "step": 41, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934962.8816473, "step": 42, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764934992.8821478, "step": 43, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935022.882596, "step": 44, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935052.8833597, "step": 45, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935082.8844776, "step": 46, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 8, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764935082.8842313, "action": "set_channel", "value": 8}}}
+{"ts": 1764935082.8850322, "step": 46, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764935112.8854032, "step": 47, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935142.8860312, "step": 48, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935172.887, "step": 49, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935202.8877993, "step": 50, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935232.8885179, "step": 51, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935262.889228, "step": 52, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935292.890191, "step": 53, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935322.8917797, "step": 54, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 10, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764935322.8915246, "action": "set_channel", "value": 10}}}
+{"ts": 1764935322.8922358, "step": 54, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764935352.89299, "step": 55, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935382.8936145, "step": 56, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935412.8944318, "step": 57, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935442.8952222, "step": 58, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935472.8960817, "step": 59, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935502.8970537, "step": 60, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935532.8979802, "step": 61, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935562.8988605, "step": 62, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935592.899463, "step": 63, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935622.9002826, "step": 64, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935652.9011924, "step": 65, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935682.9027796, "step": 66, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 9, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764935682.9024837, "action": "set_channel", "value": 9}}}
+{"ts": 1764935682.9032252, "step": 66, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764935712.9039214, "step": 67, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap2", "type": "channel", "value": 8, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap2", "mqtt_payload": {"ap_id": "ap2", "ts": 1764935712.9037788, "action": "set_channel", "value": 8}}}
+{"ts": 1764935712.9041817, "step": 67, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764935742.9049783, "step": 68, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935772.9059126, "step": 69, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935802.9068496, "step": 70, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935832.9077704, "step": 71, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935862.9085925, "step": 72, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935892.9091585, "step": 73, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935922.9104633, "step": 74, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 1, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764935922.910317, "action": "set_channel", "value": 1}}}
+{"ts": 1764935922.9106102, "step": 74, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764935952.9114754, "step": 75, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764935982.9124541, "step": 76, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936012.9131563, "step": 77, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936042.913927, "step": 78, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936072.9144118, "step": 79, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936102.9147453, "step": 80, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936132.9154582, "step": 81, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936162.9163158, "step": 82, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936192.9172094, "step": 83, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936222.9177644, "step": 84, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936252.918434, "step": 85, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936282.9200609, "step": 86, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 2, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764936282.9197671, "action": "set_channel", "value": 2}}}
+{"ts": 1764936282.9204805, "step": 86, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764936312.9215324, "step": 87, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap2", "type": "channel", "value": 3, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap2", "mqtt_payload": {"ap_id": "ap2", "ts": 1764936312.9213727, "action": "set_channel", "value": 3}}}
+{"ts": 1764936312.9217513, "step": 87, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764936342.922638, "step": 88, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936372.923311, "step": 89, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936402.9236438, "step": 90, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936432.9239895, "step": 91, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936462.9242687, "step": 92, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936492.9248395, "step": 93, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936522.925316, "step": 94, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936552.9256794, "step": 95, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936582.9261715, "step": 96, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936612.9268572, "step": 97, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936642.9272995, "step": 98, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936672.927985, "step": 99, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936702.928826, "step": 100, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936732.9295764, "step": 101, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 4, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764936732.929436, "action": "set_channel", "value": 4}}}
+{"ts": 1764936732.9298441, "step": 101, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764936762.9300492, "step": 102, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936792.9307747, "step": 103, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936822.9314337, "step": 104, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936852.9323413, "step": 105, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936882.9334738, "step": 106, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 1, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764936882.9332485, "action": "set_channel", "value": 1}}}
+{"ts": 1764936882.9338984, "step": 106, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764936912.9353178, "step": 107, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap2", "type": "channel", "value": 2, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap2", "mqtt_payload": {"ap_id": "ap2", "ts": 1764936912.9350402, "action": "set_channel", "value": 2}}}
+{"ts": 1764936912.9357896, "step": 107, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764936942.9364414, "step": 108, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764936972.9373605, "step": 109, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937002.937816, "step": 110, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937032.9380977, "step": 111, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937062.9383676, "step": 112, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937092.9389863, "step": 113, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937122.93947, "step": 114, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937152.939853, "step": 115, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937182.9401896, "step": 116, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937212.9409602, "step": 117, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937242.9418597, "step": 118, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937272.942408, "step": 119, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937302.943219, "step": 120, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937332.9446647, "step": 121, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 3, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764937332.9444418, "action": "set_channel", "value": 3}}}
+{"ts": 1764937332.9448547, "step": 121, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764937362.945649, "step": 122, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937392.9463444, "step": 123, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937422.946653, "step": 124, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937452.947047, "step": 125, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937482.9484825, "step": 126, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 4, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764937482.9482493, "action": "set_channel", "value": 4}}}
+{"ts": 1764937482.9489632, "step": 126, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764937512.950618, "step": 127, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap2", "type": "channel", "value": 1, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap2", "mqtt_payload": {"ap_id": "ap2", "ts": 1764937512.9503224, "action": "set_channel", "value": 1}}}
+{"ts": 1764937512.9512095, "step": 127, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764937542.9520428, "step": 128, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937572.952936, "step": 129, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937602.9538326, "step": 130, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937632.9544578, "step": 131, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937662.955387, "step": 132, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937692.955976, "step": 133, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937722.9565463, "step": 134, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937752.9575846, "step": 135, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937782.9584918, "step": 136, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937812.959046, "step": 137, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937842.959913, "step": 138, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937872.960387, "step": 139, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937902.9610794, "step": 140, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937932.9619844, "step": 141, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937962.9629312, "step": 142, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764937992.9638524, "step": 143, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938022.9645035, "step": 144, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938052.965421, "step": 145, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938082.966975, "step": 146, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 2, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764938082.9667196, "action": "set_channel", "value": 2}}}
+{"ts": 1764938082.9672053, "step": 146, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764938112.9690688, "step": 147, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap2", "type": "channel", "value": 4, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap2", "mqtt_payload": {"ap_id": "ap2", "ts": 1764938112.968771, "action": "set_channel", "value": 4}}}
+{"ts": 1764938112.96945, "step": 147, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764938142.970045, "step": 148, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938172.9709594, "step": 149, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 1, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764938172.9707935, "action": "set_channel", "value": 1}}}
+{"ts": 1764938172.9712417, "step": 149, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764938202.971918, "step": 150, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938232.9723659, "step": 151, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938262.972936, "step": 152, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938292.9738536, "step": 153, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938322.974446, "step": 154, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938352.9748127, "step": 155, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938382.9751735, "step": 156, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938412.9758413, "step": 157, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938442.9767132, "step": 158, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938472.977309, "step": 159, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938502.978086, "step": 160, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938532.978937, "step": 161, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938562.9798048, "step": 162, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938592.980689, "step": 163, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938622.981924, "step": 164, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938652.9827867, "step": 165, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938682.983826, "step": 166, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 3, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764938682.983575, "action": "set_channel", "value": 3}}}
+{"ts": 1764938682.9840193, "step": 166, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764938712.9848123, "step": 167, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap2", "type": "channel", "value": 2, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap2", "mqtt_payload": {"ap_id": "ap2", "ts": 1764938712.9845862, "action": "set_channel", "value": 2}}}
+{"ts": 1764938712.985134, "step": 167, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764938742.9858398, "step": 168, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938772.9944887, "step": 169, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938803.004176, "step": 170, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 4, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764938803.003929, "action": "set_channel", "value": 4}}}
+{"ts": 1764938803.0118153, "step": 170, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764938833.0125868, "step": 171, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938863.0209212, "step": 172, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938893.0217984, "step": 173, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938923.0302467, "step": 174, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938953.0386477, "step": 175, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764938983.04651, "step": 176, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939013.0543714, "step": 177, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939043.0628014, "step": 178, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939073.0715854, "step": 179, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939103.077721, "step": 180, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939133.0859356, "step": 181, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939163.0943344, "step": 182, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939193.1022682, "step": 183, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939223.1109264, "step": 184, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939253.1190605, "step": 185, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939283.1271348, "step": 186, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 1, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764939283.1269894, "action": "set_channel", "value": 1}}}
+{"ts": 1764939283.1347072, "step": 186, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764939313.1355639, "step": 187, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap2", "type": "channel", "value": 3, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap2", "mqtt_payload": {"ap_id": "ap2", "ts": 1764939313.1353464, "action": "set_channel", "value": 3}}}
+{"ts": 1764939313.1433294, "step": 187, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764939343.143781, "step": 188, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939373.1450274, "step": 189, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939403.1539323, "step": 190, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 7, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764939403.1537435, "action": "set_channel", "value": 7}}}
+{"ts": 1764939403.1615298, "step": 190, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764939433.1622727, "step": 191, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939463.1701102, "step": 192, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939493.1778343, "step": 193, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939523.1856, "step": 194, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939553.1936204, "step": 195, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939583.1945424, "step": 196, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939613.2034552, "step": 197, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939643.2122667, "step": 198, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939673.2210212, "step": 199, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939703.2299006, "step": 200, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939733.2385895, "step": 201, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939763.2469423, "step": 202, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939793.2550707, "step": 203, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939823.263589, "step": 204, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939853.2723978, "step": 205, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939883.281936, "step": 206, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 2, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764939883.2816048, "action": "set_channel", "value": 2}}}
+{"ts": 1764939883.2895958, "step": 206, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764939913.2910762, "step": 207, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap2", "type": "channel", "value": 8, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap2", "mqtt_payload": {"ap_id": "ap2", "ts": 1764939913.2908485, "action": "set_channel", "value": 8}}}
+{"ts": 1764939913.2987862, "step": 207, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764939943.2994883, "step": 208, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764939973.308151, "step": 209, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940003.3168445, "step": 210, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 9, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764940003.3166733, "action": "set_channel", "value": 9}}}
+{"ts": 1764940003.3244932, "step": 210, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764940033.325209, "step": 211, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940063.3340228, "step": 212, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940093.342522, "step": 213, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940123.351264, "step": 214, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940153.3601406, "step": 215, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940183.369042, "step": 216, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940213.3777714, "step": 217, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940243.3860285, "step": 218, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940273.3944187, "step": 219, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940303.4031024, "step": 220, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940333.411403, "step": 221, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940363.420062, "step": 222, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940393.4284163, "step": 223, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940423.4366295, "step": 224, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940453.4446685, "step": 225, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940483.4528496, "step": 226, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 7, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764940483.4526777, "action": "set_channel", "value": 7}}}
+{"ts": 1764940483.4534495, "step": 226, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764940513.454141, "step": 227, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940543.4626126, "step": 228, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940573.4713397, "step": 229, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940603.4807508, "step": 230, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 2, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764940603.4805248, "action": "set_channel", "value": 2}}}
+{"ts": 1764940603.4885883, "step": 230, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764940633.490359, "step": 231, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap2", "type": "channel", "value": 9, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap2", "mqtt_payload": {"ap_id": "ap2", "ts": 1764940633.4901133, "action": "set_channel", "value": 9}}}
+{"ts": 1764940633.4979901, "step": 231, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764940663.4982893, "step": 232, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940693.5063887, "step": 233, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940723.5148926, "step": 234, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940753.5236301, "step": 235, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940783.5320845, "step": 236, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940813.5403874, "step": 237, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940843.5485356, "step": 238, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940873.5572083, "step": 239, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940903.5656261, "step": 240, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940933.5740395, "step": 241, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940963.5823748, "step": 242, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764940993.59064, "step": 243, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941023.5992396, "step": 244, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941053.6079266, "step": 245, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941083.616791, "step": 246, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 8, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764941083.6165037, "action": "set_channel", "value": 8}}}
+{"ts": 1764941083.6175954, "step": 246, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764941113.6178381, "step": 247, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941143.6260366, "step": 248, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941173.6344287, "step": 249, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941203.6427195, "step": 250, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941233.651542, "step": 251, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap2", "type": "channel", "value": 7, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap2", "mqtt_payload": {"ap_id": "ap2", "ts": 1764941233.6513808, "action": "set_channel", "value": 7}}}
+{"ts": 1764941233.6591527, "step": 251, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764941263.6599848, "step": 252, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941293.6683738, "step": 253, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941323.6771777, "step": 254, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 9, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764941323.677028, "action": "set_channel", "value": 9}}}
+{"ts": 1764941323.684765, "step": 254, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764941353.685038, "step": 255, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941383.6931622, "step": 256, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941413.7013857, "step": 257, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941443.7098, "step": 258, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941473.7185073, "step": 259, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941503.7192824, "step": 260, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941533.7276075, "step": 261, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941563.7361667, "step": 262, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941593.7447224, "step": 263, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941623.7534556, "step": 264, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941653.754563, "step": 265, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941683.7640522, "step": 266, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 2, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764941683.7638106, "action": "set_channel", "value": 2}}}
+{"ts": 1764941683.7719345, "step": 266, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764941713.772798, "step": 267, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941743.781551, "step": 268, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941773.7898505, "step": 269, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941803.7976048, "step": 270, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941833.805702, "step": 271, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap2", "type": "channel", "value": 8, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap2", "mqtt_payload": {"ap_id": "ap2", "ts": 1764941833.8055675, "action": "set_channel", "value": 8}}}
+{"ts": 1764941833.8134885, "step": 271, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764941863.813865, "step": 272, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941893.8146265, "step": 273, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941923.8243206, "step": 274, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 7, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764941923.8240912, "action": "set_channel", "value": 7}}}
+{"ts": 1764941923.8320005, "step": 274, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764941953.8322856, "step": 275, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764941983.840044, "step": 276, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942013.8479161, "step": 277, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942043.8561478, "step": 278, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942073.864533, "step": 279, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942103.8729708, "step": 280, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942133.8813624, "step": 281, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942163.889194, "step": 282, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942193.8896663, "step": 283, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942223.8979504, "step": 284, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942253.9065256, "step": 285, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942283.9157183, "step": 286, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 9, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764942283.9155629, "action": "set_channel", "value": 9}}}
+{"ts": 1764942283.923372, "step": 286, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764942313.9238281, "step": 287, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942343.932324, "step": 288, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942373.941127, "step": 289, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942403.9499216, "step": 290, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942433.958627, "step": 291, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942463.967388, "step": 292, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942493.9757895, "step": 293, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942523.9845536, "step": 294, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 2, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764942523.984278, "action": "set_channel", "value": 2}}}
+{"ts": 1764942523.9922078, "step": 294, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764942553.9928992, "step": 295, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942584.0010607, "step": 296, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942614.0098636, "step": 297, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942644.0183272, "step": 298, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942674.0270517, "step": 299, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942704.0353973, "step": 300, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942734.0358274, "step": 301, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942764.0439248, "step": 302, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942794.0524507, "step": 303, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942824.0608137, "step": 304, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942854.0693562, "step": 305, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942884.0782037, "step": 306, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 7, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764942884.0780518, "action": "set_channel", "value": 7}}}
+{"ts": 1764942884.0784352, "step": 306, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764942914.0790925, "step": 307, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942944.087937, "step": 308, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764942974.0966709, "step": 309, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943004.1049178, "step": 310, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943034.113864, "step": 311, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943064.122123, "step": 312, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943094.1299238, "step": 313, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943124.1381316, "step": 314, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 9, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764943124.13798, "action": "set_channel", "value": 9}}}
+{"ts": 1764943124.1456945, "step": 314, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764943154.1460245, "step": 315, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943184.1539052, "step": 316, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943214.1620195, "step": 317, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943244.170289, "step": 318, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943274.178713, "step": 319, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943304.1876774, "step": 320, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943334.1964934, "step": 321, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943364.2052176, "step": 322, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943394.2134416, "step": 323, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943424.2139924, "step": 324, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943454.2221427, "step": 325, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943484.231348, "step": 326, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap3", "type": "channel", "value": 2, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap3", "mqtt_payload": {"ap_id": "ap3", "ts": 1764943484.2312088, "action": "set_channel", "value": 2}}}
+{"ts": 1764943484.238993, "step": 326, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764943514.2394536, "step": 327, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943544.2477968, "step": 328, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943574.2556856, "step": 329, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943604.2635915, "step": 330, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943634.2719476, "step": 331, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943664.2806642, "step": 332, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943694.2894208, "step": 333, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943724.2990358, "step": 334, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 7, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764943724.2986803, "action": "set_channel", "value": 7}}}
+{"ts": 1764943724.30672, "step": 334, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764943754.3074114, "step": 335, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943784.3161829, "step": 336, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943814.324992, "step": 337, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943844.3338227, "step": 338, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943874.342362, "step": 339, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943904.3511589, "step": 340, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943934.3599458, "step": 341, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943964.368435, "step": 342, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764943994.376689, "step": 343, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944024.38472, "step": 344, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944054.393141, "step": 345, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944084.4012904, "step": 346, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944114.4090414, "step": 347, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944144.416769, "step": 348, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944174.4244556, "step": 349, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944204.432159, "step": 350, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944234.4398456, "step": 351, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944264.4478712, "step": 352, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944294.4556978, "step": 353, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944324.4644432, "step": 354, "phase": null, "event": "fast_loop_action", "data": {"source": "fast_loop", "ap_id": "ap1", "type": "channel", "value": 9, "reason": "fastloop_channel_change_due_to_interference", "topic": "rrm/actions/ap1", "mqtt_payload": {"ap_id": "ap1", "ts": 1764944324.46419, "action": "set_channel", "value": 9}}}
+{"ts": 1764944324.4721775, "step": 354, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 1, "num_aps": 3}}
+{"ts": 1764944354.473063, "step": 355, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944384.4818306, "step": 356, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944414.4906993, "step": 357, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944444.499156, "step": 358, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944474.506959, "step": 359, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}
+{"ts": 1764944504.5147476, "step": 360, "phase": null, "event": "fast_loop_tick", "data": {"source": "fast_loop", "num_proposals": 0, "num_aps": 3}}

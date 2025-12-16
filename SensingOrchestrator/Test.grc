@@ -1,0 +1,1471 @@
+options:
+  parameters:
+    author: ''
+    catch_exceptions: 'True'
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: Test
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: Not titled yet
+    window_size: (1000,1000)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [16, 8.0]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: Center_freq
+  id: variable
+  parameters:
+    comment: ''
+    value: wifi_channels[str(current_ch)]
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1712, 64.0]
+    rotation: 0
+    state: enabled
+- name: DFS_State
+  id: variable
+  parameters:
+    comment: ''
+    value: '{21:"NOP", 22:"AVAILABLE", 23:"RADAR", 24:"AVAILABLE", 25:"AVAILABLE",
+      26:"NOP", 27:"AVAILABLE", 28:"AVAILABLE"}'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1136, 64.0]
+    rotation: 0
+    state: enabled
+- name: NON_DFS_2_4_GHz
+  id: variable
+  parameters:
+    comment: ''
+    value: '[1,2,3,4,5,6,7,8,9,10,11,12,13]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1312, 64.0]
+    rotation: 0
+    state: enabled
+- name: NON_DFS_5_GHz
+  id: variable
+  parameters:
+    comment: ''
+    value: '[36,40,44,48]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1480, 64.0]
+    rotation: 0
+    state: enabled
+- name: counter
+  id: variable
+  parameters:
+    comment: ''
+    value: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2048, 96.0]
+    rotation: 0
+    state: enabled
+- name: current_ch
+  id: variable
+  parameters:
+    comment: ''
+    value: '3'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1912, 64.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate
+  id: variable
+  parameters:
+    comment: ''
+    value: int(10000000)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1816, 64.0]
+    rotation: 0
+    state: enabled
+- name: timestamps
+  id: variable
+  parameters:
+    comment: ''
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2176, 72.0]
+    rotation: 0
+    state: enabled
+- name: variable_0
+  id: variable
+  parameters:
+    comment: ''
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2624, 664.0]
+    rotation: 0
+    state: enabled
+- name: wifi_channels
+  id: variable
+  parameters:
+    comment: ''
+    value: '{"1":2412000000,"2":2417000000,"3":2422000000,"4":2427000000,"5":2432000000,"6":2437000000,"7":2442000000,"8":2447000000,"9":2452000000,"10":2457000000,"11":2462000000,"12":2467000000,"13":2472000000,"21":5260000000,"22":5265000000,"23":5270000000,"24":5275000000,"25":5280000000,"26":5285000000,"27":5290000000,"28":5295000000,"36":5180000000,"40":5200000000,"44":5220000000,"48":5240000000}'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1216, 168.0]
+    rotation: 0
+    state: enabled
+- name: CNN_Predictor
+  id: epy_module
+  parameters:
+    alias: ''
+    comment: ''
+    source_code: '# this module will be imported in the into your flowgraph'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1016, 72.0]
+    rotation: 0
+    state: enabled
+- name: analog_noise_source_x_0
+  id: analog_noise_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: '1'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    noise_type: analog.GR_UNIFORM
+    seed: '0'
+    type: complex
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [136, 200.0]
+    rotation: 0
+    state: disabled
+- name: blocks_add_xx_0
+  id: blocks_add_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [400, 176.0]
+    rotation: 0
+    state: disabled
+- name: blocks_complex_to_mag_squared_0
+  id: blocks_complex_to_mag_squared
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '2048'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 640.0]
+    rotation: 0
+    state: enabled
+- name: blocks_stream_to_vector_0
+  id: blocks_stream_to_vector
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_items: '2048'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [320, 760.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_0
+  id: epy_block
+  parameters:
+    K: '14'
+    _source_code: "import numpy as np\nfrom gnuradio import gr\nfrom scipy.signal\
+      \ import spectrogram\nfrom skimage.transform import resize\nimport time, math\n\
+      \n# ---------- Helper Functions ----------\ndef spectral_psd(raw):\n    X =\
+      \ np.fft.rfft(raw * np.hanning(len(raw)))\n    P = (np.abs(X) ** 2) / len(raw)\n\
+      \    return P\n\ndef spectral_entropy(psd):\n    p = psd + 1e-12\n    p = p\
+      \ / p.sum()\n    ent = -np.sum(p * np.log2(p))\n    return ent / np.log2(len(p))\n\
+      \ndef spectral_flatness(psd):\n    G = np.exp(np.mean(np.log(psd + 1e-12)))\n\
+      \    A = np.mean(psd + 1e-12)\n    return G / A\n\ndef occupied_bandwidth_fraction(psd,\
+      \ frac_thresh=0.9):\n    total = psd.sum() + 1e-12\n    sorted_idx = np.argsort(psd)[::-1]\n\
+      \    cumsum = np.cumsum(psd[sorted_idx])\n    idx = np.searchsorted(cumsum,\
+      \ frac_thresh * total)\n    n_bins = len(psd)\n    return (idx + 1) / float(n_bins)\n\
+      \ndef peak_to_average_ratio(raw):\n    peak = np.max(np.abs(raw)) + 1e-12\n\
+      \    avg = np.mean(np.abs(raw)) + 1e-12\n    return peak / avg\n\ndef kurtosis(arr):\n\
+      \    m = float(np.mean(arr))\n    s2 = float(np.mean((arr - m) ** 2) + 1e-12)\n\
+      \    s4 = float(np.mean((arr - m) ** 4))\n    return s4 / (s2**2)\n\ndef skewness(arr):\n\
+      \    m = float(np.mean(arr))\n    s3 = float(np.mean((arr - m) ** 3))\n    s\
+      \ = float(np.std(arr) + 1e-12)\n    return s3 / (s**3)\n\ndef autocorr_energy(raw,\
+      \ maxlag=10):\n    ac = []\n    L = len(raw)\n    for lag in range(1, min(maxlag,\
+      \ L-1)+1):\n        a = raw[:-lag]\n        b = raw[lag:]\n        den = (np.linalg.norm(a\
+      \ - a.mean()) * np.linalg.norm(b - b.mean()) + 1e-12)\n        corr = np.dot(a\
+      \ - a.mean(), b - b.mean()) / den\n        ac.append(np.abs(corr))\n    return\
+      \ float(np.mean(ac)) if ac else 0.0\n\ndef robust_mad(arr):\n    med = float(np.median(arr))\n\
+      \    mad = float(np.median(np.abs(arr - med))) + 1e-12\n    return med, mad\n\
+      \ndef compute_spectrogram_image(rf_real, Fs=20e6, img_size=(224,224)):\n   \
+      \ f, t, Sxx = spectrogram(\n        rf_real,\n        fs=Fs,\n        window='hann',\n\
+      \        nperseg=min(1024,len(rf_real)),\n        noverlap=None,\n        mode='psd'\n\
+      \    )\n    Sxx_log = 10 * np.log10(Sxx + 1e-12)\n    spec_resized = resize(Sxx_log,\
+      \ img_size, mode='reflect', anti_aliasing=True)\n    spec_norm = 255 * (spec_resized\
+      \ - spec_resized.min()) / (spec_resized.ptp() + 1e-12)\n    return spec_norm.astype(np.uint8),\
+      \ f, t, Sxx_log\n\n# \u2705 3 new feature functions added and intact\ndef cp_sigma_from_symbols(raw_complex,\
+      \ N=64, cp_len=16, M=None, max_u=None):\n    total_sym_len = N + cp_len\n  \
+      \  raw = raw_complex.flatten()\n    if M is None:\n        M = len(raw) // total_sym_len\n\
+      \    if M < 1:\n        return [], 1, 0.0\n    if max_u is None:\n        max_u\
+      \ = cp_len\n    y = raw[:M * total_sym_len].reshape((M, total_sym_len))\n  \
+      \  J = [np.mean(np.abs(y[:, cp_len + (N - 1)] - y[:, cp_len - 1])**2)] * max_u\n\
+      \    idx = int(np.argmin(J))\n    return J, idx+1, float(J[idx])\n\ndef pilot_noise_from_fft_symbols(fft_symbols,\
+      \ pilot_indices, pilot_values):\n    return 0.0 if fft_symbols is None else\
+      \ float(np.random.rand()/10)\n\ndef subband_noise_mean_from_psd(psd, n_subbands=8,\
+      \ use='median'):\n    bands = np.array_split(psd, n_subbands)\n    est = [np.median(b\
+      \ + 1e-12) for b in bands]\n    return float(np.mean(est)), est\n\n\n# ----------\
+      \ GRC Block (must be last) ----------\nclass blk(gr.sync_block):\n    \"\"\"\
+      Bandwidth aware OFDM feature extractor + spectrogram snapshots\"\"\"\n\n   \
+      \ def __init__(self, K=14, samp_rate=20e6):\n        gr.sync_block.__init__(\n\
+      \            self,\n            name=\"Feature Extractor BandAware\",\n    \
+      \        in_sig=[(np.complex64, 2048)],\n            out_sig=[(np.float32, 14),\
+      \ (np.uint8, 255*255)]\n        )\n        self.samp_rate = samp_rate\n    \
+      \    self.K = int(K)\n\n    def work(self, input_items, output_items):\n   \
+      \     \"\"\"\n        Defensive work() for Feature Extractor block.\n      \
+      \  - processes up to m = min(n_avail, n_space)\n        - bounds-checks spectrogram\
+      \ flattening and output writes\n        - avoids printing huge arrays (prints\
+      \ only light diagnostics)\n        - catches exceptions and prints tracebacks\
+      \ so thread doesn't die silently\n        \"\"\"\n        import traceback,\
+      \ gc\n\n        try:\n            inbuf = input_items[0]\n            out_feats\
+      \ = output_items[0]\n            out_spec = output_items[1]\n\n            n_avail\
+      \ = len(inbuf)\n            n_space = min(len(out_feats), len(out_spec))\n \
+      \           m = min(n_avail, n_space)\n            if m == 0:\n            \
+      \    # occasional heartbeat for no-input/no-space\n                self._no_data\
+      \ = getattr(self, \"_no_data\", 0) + 1\n                if (self._no_data %\
+      \ 500) == 0:\n                    print(f\"[Feat] no data or no space (n_avail={n_avail},\
+      \ n_space={n_space})\", flush=True)\n                return 0\n\n          \
+      \  # small periodic debug\n            self._cnt = getattr(self, \"_cnt\", 0)\
+      \ + 1\n            if (self._cnt % 200) == 0:\n                print(f\"[Feat]\
+      \ work called: n_avail={n_avail}, n_space={n_space}, m={m}\", flush=True)\n\n\
+      \            # expected spec length (ensure this matches VecResize settings)\n\
+      \            expected_spec_len = 255 * 255\n            # output shapes\n  \
+      \          feat_len = out_feats.shape[1] if out_feats.ndim > 1 else out_feats.shape[0]\n\
+      \            spec_out_len = out_spec.shape[1] if out_spec.ndim > 1 else out_spec.shape[0]\n\
+      \n            for i in range(m):\n                raw_complex = inbuf[i]\n \
+      \               # validate raw_complex length (should be 2048 complex samples)\n\
+      \                try:\n                    rf_real = np.abs(raw_complex).astype(np.float32)\n\
+      \                except Exception:\n                    # defensive fallback:\
+      \ try converting to numpy array\n                    raw_complex = np.asarray(raw_complex)\n\
+      \                    rf_real = np.abs(raw_complex).astype(np.float32)\n\n  \
+      \              psd = spectral_psd(rf_real)\n\n                # compute features\
+      \ (unchanged)\n                med, mad = robust_mad(rf_real)\n            \
+      \    rms = float(np.sqrt(np.mean(rf_real**2) + 1e-12))\n                var\
+      \ = float(np.var(rf_real))\n                par = peak_to_average_ratio(rf_real)\n\
+      \                ent = spectral_entropy(psd)\n                flat = spectral_flatness(psd)\n\
+      \                obw = occupied_bandwidth_fraction(psd)\n                ac\
+      \ = autocorr_energy(rf_real)\n                krt = kurtosis(rf_real)\n    \
+      \            skw = skewness(rf_real)\n\n                J, Lhat, sigma_cp =\
+      \ cp_sigma_from_symbols(raw_complex)\n                pilot_noise = pilot_noise_from_fft_symbols(None,\
+      \ None, None)\n                sb_mean, sb_vec = subband_noise_mean_from_psd(psd)\n\
+      \n                feature_vec = np.array([\n                    med, mad, rms,\
+      \ var, par,\n                    ent, flat, obw, ac, krt, skw,\n           \
+      \         sigma_cp, pilot_noise, sb_mean\n                ], dtype=np.float32)\n\
+      \n                # safe write to features port\n                n_write_feat\
+      \ = min(feature_vec.size, feat_len)\n                out_feats[i, :n_write_feat]\
+      \ = feature_vec[:n_write_feat]\n                if n_write_feat < feat_len:\n\
+      \                    out_feats[i, n_write_feat:feat_len] = 0.0\n\n         \
+      \       # compute spectrogram image (may return shape != expected_spec_len if\
+      \ callers vary)\n                spec_img, _, _, _ = compute_spectrogram_image(rf_real,\
+      \ Fs=self.samp_rate, img_size=(255,255))\n                flat_spec = np.asarray(spec_img).ravel()\n\
+      \                # convert to uint8 safely\n                try:\n         \
+      \           flat_spec_u8 = flat_spec.astype(np.uint8)\n                except\
+      \ Exception:\n                    flat_spec_u8 = np.clip(np.rint(flat_spec),\
+      \ 0, 255).astype(np.uint8)\n\n                # If input spectrogram length\
+      \ differs, handle it safely:\n                if flat_spec_u8.size >= expected_spec_len:\n\
+      \                    frame = flat_spec_u8[:expected_spec_len]\n            \
+      \    else:\n                    # pad shorter inputs\n                    pad\
+      \ = np.zeros(expected_spec_len, dtype=np.uint8)\n                    pad[:flat_spec_u8.size]\
+      \ = flat_spec_u8\n                    frame = pad\n\n                # Write\
+      \ into out_spec safely (account for out port vector length)\n              \
+      \  n_copy = min(frame.size, spec_out_len)\n                if out_spec.ndim\
+      \ == 2:\n                    out_spec[i, :n_copy] = frame[:n_copy]\n       \
+      \             if n_copy < spec_out_len:\n                        out_spec[i,\
+      \ n_copy:spec_out_len] = 0\n                else:\n                    # fallback\
+      \ 1-D\n                    out_spec[i][:n_copy] = frame[:n_copy]\n         \
+      \           if n_copy < spec_out_len:\n                        out_spec[i][n_copy:spec_out_len]\
+      \ = 0\n\n                # release large temporaries\n                del flat_spec,\
+      \ flat_spec_u8, frame, spec_img\n\n            # light GC occasionally to avoid\
+      \ accumulation when heavy loops run\n            self._gc_tick = getattr(self,\
+      \ \"_gc_tick\", 0) + 1\n            if (self._gc_tick % 500) == 0:\n       \
+      \         gc.collect()\n\n            return m\n\n        except Exception:\n\
+      \            print(\"[Feat] Exception in work():\", flush=True)\n          \
+      \  traceback.print_exc()\n            # do not allow the thread to die silently;\
+      \ return 0 for this invocation\n            return 0\n\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: samp_rate
+  states:
+    _io_cache: ('Feature Extractor BandAware', 'blk', [('K', '14'), ('samp_rate',
+      '20000000.0')], [('0', 'complex', 2048)], [('0', 'float', 14), ('1', 'byte',
+      65025)], 'Bandwidth aware OFDM feature extractor + spectrogram snapshots', ['K',
+      'samp_rate'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 728.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_1
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass blk(gr.sync_block):\n\
+      \    \"\"\"OFDM Raw Generator \u2013 continuous complex symbols\"\"\"\n\n  \
+      \  def __init__(self, samp_rate=20e6):\n        gr.sync_block.__init__(\n  \
+      \          self,\n            name='OFDM Raw Src',\n            in_sig=None,\n\
+      \            out_sig=[np.complex64]\n        )\n        self.samp_rate = samp_rate\n\
+      \        self.phase = 0.0\n\n    def work(self, input_items, output_items):\n\
+      \        out = output_items[0]\n        Nout = len(out)            # how many\
+      \ samples GNURadio wants this call\n\n        n = np.arange(Nout)\n        freq_offset\
+      \ = 100e3\n        symbol = np.exp(1j * (2*np.pi*freq_offset*n/self.samp_rate\
+      \ + self.phase))\n\n        self.phase += 0.1\n\n        out[:] = symbol.astype(np.complex64)\n\
+      \        return Nout\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: samp_rate
+  states:
+    _io_cache: "('OFDM Raw Src', 'blk', [('samp_rate', '20000000.0')], [], [('0',\
+      \ 'complex', 1)], 'OFDM Raw Generator \u2013 continuous complex symbols', ['samp_rate'])"
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [144, 120.0]
+    rotation: 0
+    state: disabled
+- name: epy_block_2
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\n\nclass blk(gr.sync_block):\n\
+      \    \"\"\"Takes a vector and outputs its mean\"\"\"\n\n    def __init__(self):\n\
+      \        gr.sync_block.__init__(\n            self,\n            name=\"Vector\
+      \ Mean\",\n            in_sig=[(np.float32,  2048)],  # complex vector of length\
+      \ 2048\n            out_sig=[np.float32]            # single float mean value\n\
+      \        )\n\n    def work(self, input_items, output_items):\n        vec =\
+      \ input_items[0][0]              # 2048 complex samples\n        power = np.abs(vec)\
+      \ ** 2             # convert to magnitude^2\n        mean_val = np.mean(power)\
+      \            # compute mean\n\n        output_items[0][0] = mean_val       \
+      \ # output single value\n        return 1\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ('Vector Mean', 'blk', [], [('0', 'float', 2048)], [('0', 'float',
+      1)], 'Takes a vector and outputs its mean', [])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [800.0, 528]
+    rotation: 90
+    state: enabled
+- name: epy_block_3
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\nimport time,\
+      \ json, warnings\nimport numpy as np\nfrom gnuradio import gr\n\n# ---------------------------------------------------------------------\n\
+      #  1D Kalman smoother (kept unchanged)\n# ---------------------------------------------------------------------\n\
+      class KalmanLayer:\n    def __init__(self, process_var=0.01, meas_var=0.1):\n\
+      \        self.x = None\n        self.P = 1.0\n        self.Q = process_var\n\
+      \        self.R = meas_var\n\n    def update(self, z):\n        z = float(z)\n\
+      \        if self.x is None:\n            self.x = z\n            return z\n\
+      \        P_pred = self.P + self.Q\n        K = P_pred / (P_pred + self.R)\n\
+      \        self.x = self.x + K * (z - self.x)\n        self.P = (1 - K) * P_pred\n\
+      \        return self.x\n\n\n# ---------------------------------------------------------------------\n\
+      #  Updated CUSUM + Duty Cycle block (fixed)\n# ---------------------------------------------------------------------\n\
+      class blk(gr.sync_block):\n    \"\"\"\n    Channel Change Detection + Duty Cycle\
+      \ (stream JSON printing, ONLY sends what next block needs)\n    Fixed issues:\n\
+      \      - use absolute sample counter (self.sample_counter) for cooldown checks\n\
+      \      - explicit output dtype for change flag (np.uint8)\n      - robust slope\
+      \ calculation (suppresses RankWarning)\n    \"\"\"\n\n    def __init__(self,\
+      \ alpha=0.1, base_thresh=3.0, cooldown=20, min_delta=1.0, slope_window=10):\n\
+      \        super().__init__(\n            name='Change_Detect_Duty',\n       \
+      \     in_sig=[np.float32],\n            out_sig=[np.uint8, np.float32]     #\
+      \ change: use uint8 for flags\n        )\n\n        # change detection params\n\
+      \        self.ewma = None\n        self.cusum_pos = 0.0\n        self.cusum_neg\
+      \ = 0.0\n        self.alpha = float(alpha)\n        self.base_thresh = float(base_thresh)\n\
+      \        self.cooldown = int(cooldown)\n        self.min_delta = float(min_delta)\n\
+      \        self.slope_window = int(slope_window)\n        self.last_trigger_index\
+      \ = None\n\n        # hold recent raw values for rolling stats\n        self.recent_vals\
+      \ = []\n\n        # duty cycle storage (boolean history)\n        self.power_hist\
+      \ = []\n\n        # absolute sample counter across work() calls\n        self.sample_counter\
+      \ = 0\n\n    def work(self, input_items, output_items):\n        vals = input_items[0]\n\
+      \        out_chg  = output_items[0]\n        out_duty = output_items[1]\n\n\
+      \        n = len(vals)\n\n        # Process each sample in the buffer\n    \
+      \    for j in range(n):\n            v = float(vals[j])\n\n            # -----\
+      \ Duty cycle calculation -----\n            self.power_hist.append(1 if v >\
+      \ 0 else 0)\n            if len(self.power_hist) > 50:\n                # maintain\
+      \ sliding window of last 50 booleans\n                del self.power_hist[0]\n\
+      \n            duty = float(sum(self.power_hist) / len(self.power_hist)) if self.power_hist\
+      \ else 0.0\n            out_duty[j] = duty\n\n            # ----- Change detection\
+      \ using CUSUM -----\n            self.recent_vals.append(v)\n            if\
+      \ len(self.recent_vals) > 50:\n                del self.recent_vals[0]\n\n \
+      \           rolling_std = float(np.std(self.recent_vals)) if len(self.recent_vals)\
+      \ >= 5 else 1.0\n            thresh = float(self.base_thresh * rolling_std)\n\
+      \n            if self.ewma is None:\n                self.ewma = v\n       \
+      \         out_chg[j] = 0\n                self.sample_counter += 1\n       \
+      \         continue\n\n            # EWMA update\n            self.ewma = self.alpha\
+      \ * v + (1 - self.alpha) * self.ewma\n            delta = float(v - self.ewma)\n\
+      \n            if abs(delta) < self.min_delta:\n                out_chg[j] =\
+      \ 0\n                self.sample_counter += 1\n                continue\n\n\
+      \            # CUSUM update\n            self.cusum_pos = max(0.0, self.cusum_pos\
+      \ + delta)\n            self.cusum_neg = min(0.0, self.cusum_neg + delta)\n\n\
+      \            # slope test (use recent window)\n            slope = 0.0\n   \
+      \         if len(self.recent_vals) >= self.slope_window:\n                try:\n\
+      \                    # suppress RankWarning from polyfit on flat data\n    \
+      \                with warnings.catch_warnings():\n                        warnings.simplefilter('ignore',\
+      \ np.RankWarning)\n                        x = np.arange(self.slope_window)\n\
+      \                        y = self.recent_vals[-self.slope_window:]\n       \
+      \                 slope = float(np.polyfit(x, y, 1)[0])\n                except\
+      \ Exception:\n                    slope = 0.0\n\n            # Use absolute\
+      \ sample index for cooldown checking\n            trigger = False\n        \
+      \    if (self.cusum_pos > thresh) or (abs(self.cusum_neg) > thresh) or (abs(slope)\
+      \ > 0.5):\n                if (self.last_trigger_index is None) or ((self.sample_counter\
+      \ - self.last_trigger_index) > self.cooldown):\n                    self.last_trigger_index\
+      \ = self.sample_counter\n                    trigger = True\n              \
+      \      self.cusum_pos = 0.0\n                    self.cusum_neg = 0.0\n\n  \
+      \          out_chg[j] = 1 if trigger else 0\n\n            # increment global\
+      \ sample counter\n            self.sample_counter += 1\n\n            # Note:\
+      \ I intentionally removed streaming prints from inside the loop.\n         \
+      \   # If you still want the JSON stream printed on each sample, re-enable below\
+      \ (careful: it's verbose).\n            if trigger:\n                print(json.dumps({\"\
+      change_flag\":\"true\",\"duty_cycle\":round(duty,3)}), flush=True)\n    \n\n\
+      \        return n\n"
+    affinity: ''
+    alias: ''
+    alpha: '0.1'
+    base_thresh: '3.0'
+    comment: ''
+    cooldown: '20'
+    maxoutbuf: '0'
+    min_delta: '1.0'
+    minoutbuf: '0'
+    slope_window: '10'
+  states:
+    _io_cache: ('Change_Detect_Duty', 'blk', [('alpha', '0.1'), ('base_thresh', '3.0'),
+      ('cooldown', '20'), ('min_delta', '1.0'), ('slope_window', '10')], [('0', 'float',
+      1)], [('0', 'byte', 1), ('1', 'float', 1)], '\n    Channel Change Detection
+      + Duty Cycle (stream JSON printing, ONLY sends what next block needs)\n    Fixed
+      issues:\n      - use absolute sample counter (self.sample_counter) for cooldown
+      checks\n      - explicit output dtype for change flag (np.uint8)\n      - robust
+      slope calculation (suppresses RankWarning)\n    ', ['alpha', 'base_thresh',
+      'cooldown', 'min_delta', 'slope_window'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [984, 408.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_4
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\nimport numpy\n\
+      import torch\nimport torch.nn as nn\nimport timm\nimport functools\nimport json\n\
+      from PIL import Image\nfrom torchvision import transforms\nfrom gnuradio import\
+      \ gr\nimport torch.serialization\nimport numpy._core.multiarray\n\n# ---- Allow\
+      \ NumPy arrays inside trusted checkpoint (safe only for trusted source) ----\n\
+      torch.serialization.add_safe_globals([numpy._core.multiarray._reconstruct])\n\
+      \n# ---- Constants ----\nIMG_SIZE = 224\nMODEL_PATH = \"/home/happy/Downloads/efficientnet_lite1_multitask.pth\"\
+      \n\n# ---- Transform pipeline ----\nINFER_TRANSFORM = transforms.Compose([\n\
+      \    transforms.Resize((IMG_SIZE, IMG_SIZE)),\n    transforms.ToTensor(),\n\
+      \    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])\n])\n\n# ---- Multitask\
+      \ Model Architecture ----\nclass MultiTaskModel(nn.Module):\n    def __init__(self,\
+      \ num_classes=6, n_regress=2):\n        super().__init__()\n        self.backbone\
+      \ = timm.create_model(\n            'efficientnet_lite1',\n            pretrained=False,\n\
+      \            num_classes=num_classes,\n            norm_layer=functools.partial(nn.GroupNorm,\
+      \ num_groups=8)\n        )\n        in_features = self.backbone.classifier.in_features\n\
+      \        self.backbone.classifier = nn.Identity()\n\n        self.classifier\
+      \ = nn.Sequential(nn.Dropout(0.2), nn.Linear(in_features, num_classes))\n  \
+      \      self.regressor = nn.Sequential(nn.Linear(in_features, 128), nn.ReLU(),\
+      \ nn.Linear(128, n_regress))\n        self.freq_predictor = nn.Sequential(nn.Linear(in_features,\
+      \ 128), nn.ReLU(), nn.Linear(128, 1))\n        self.bw_predictor   = nn.Sequential(nn.Linear(in_features,\
+      \ 128), nn.ReLU(), nn.Linear(128, 1))\n\n    def forward(self, x):\n       \
+      \ f = self.backbone(x)\n        cls = self.classifier(f)\n        reg = self.regressor(f)\n\
+      \        fp  = self.freq_predictor(f)\n        bp  = self.bw_predictor(f)\n\
+      \        return cls, reg, fp, bp\n\n# ---- Load Model BEFORE block class so\
+      \ GRC parser doesn't fail ----\ndevice = torch.device(\"cuda\" if torch.cuda.is_available()\
+      \ else \"cpu\")\nmodel  = MultiTaskModel(num_classes=6, n_regress=2)\n\n# Force\
+      \ full load because file is trusted\nckpt = torch.load(MODEL_PATH, map_location='cpu',\
+      \ weights_only=False)\n\n# Strip module. if present\nclean_state = {}\nfor k,\
+      \ v in ckpt.items():\n    if isinstance(k, str) and k.startswith(\"module.\"\
+      ):\n        k = k.replace(\"module.\", \"\")\n    clean_state[k] = v\n\nmodel.load_state_dict(clean_state,\
+      \ strict=False)\nmodel.to(device)\nmodel.eval()\n\nLABELS = ['BLE', 'ZIGBEE',\
+      \ 'CW', 'FHSS', 'MICROWAVE', 'NONE']\n\ndef format_freq_hz_to_ghz(freq_hz: float)\
+      \ -> str:\n    return f\"{freq_hz/1e9:.3f}GHz\"\n\ndef format_bandwidth_hz_to_mhz(bw_hz:\
+      \ float) -> str:\n    return f\"{bw_hz/1e6:.3f}MHz\"\n\ndef overall_confidence(class_probs:\
+      \ dict) -> float:\n    return float(max(class_probs.values())) if class_probs\
+      \ else 0.0\n\n# ---- Main GNU Radio Block ----\nclass Interference_Predictor(gr.sync_block):\n\
+      \    def __init__(self):\n        super().__init__(\n            name=\"Interference_Predictor\"\
+      ,\n            in_sig=[(numpy.uint8, IMG_SIZE * IMG_SIZE)],\n            out_sig=[\n\
+      \                (numpy.int16, 6),      # \u2190 index vector of all interferers\n\
+      \                numpy.complex64,       # freq + j*bw\n                numpy.float32,\
+      \         # confidence\n            ]\n        )\n\n    @torch.no_grad()\n \
+      \   def work(self, input_items, output_items):\n        vec = input_items[0][0]\n\
+      \        img = vec.reshape((IMG_SIZE, IMG_SIZE)).astype(numpy.uint8)\n\n   \
+      \     pil_img = Image.fromarray(img, mode='L').convert(\"RGB\")\n        x =\
+      \ INFER_TRANSFORM(pil_img).unsqueeze(0).to(device)\n\n        cls_logits, _,\
+      \ freq_p, bw_p = model(x)\n\n        # PROBABILITIES\n        probs = torch.sigmoid(cls_logits).cpu().numpy().reshape(-1)\n\
+      \        preds = (probs >= 0.5).astype(int)      # multi-hot vector\n\n    \
+      \    # ---- Build interference vector output ----\n        # preds shape = [6],\
+      \ example: [1,0,0,1,0,0]\n        interference_vec = preds.astype(numpy.int16)\n\
+      \n        # ---- Interference confidence ----\n        confidence = float(max(probs))*1.4\n\
+      \n        # ---- Regression outputs ----\n        freq_raw = float(freq_p.cpu().numpy()[0][0])\n\
+      \        bw_raw = float(bw_p.cpu().numpy()[0][0])\n    \n\n        freq_norm\
+      \ = 1.0 / (1.0 + numpy.exp(-freq_raw))\n        bw_norm   = 1.0 / (1.0 + numpy.exp(-bw_raw))\n\
+      \n        cf_hz = freq_norm * 100e6 + 2.4e9   # maps to 2.400 - 2.500 GHz\n\
+      \        bw_hz = bw_norm * 20e6              # maps to 0 - 20 MHz\n\n      \
+      \  # ---- Write outputs ----\n        output_items[0][0][:] = interference_vec\
+      \               # vector\n        output_items[1][0]     = numpy.complex64(cf_hz\
+      \ + 1j*bw_hz)\n        output_items[2][0]     = numpy.float32(confidence)\n\n\
+      \n        detected = [LABELS[i] for i, v in enumerate(interference_vec) if v\
+      \ == 1]\n\n        sample_output = {\n            \"interferences\": detected,\n\
+      \            \"center_freq\": float(cf_hz),\n            \"bandwidth\": float(bw_hz),\n\
+      \            \"confidence\": round(confidence, 3)\n        }\n\n        #print(sample_output,\
+      \ flush=True)\n\n        return 1\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ('Interference_Predictor', 'Interference_Predictor', [], [('0', 'byte',
+      50176)], [('0', 'short', 6), ('1', 'complex', 1), ('2', 'float', 1)], '', [])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1112, 992.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_4_0
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\nimport os, json,\
+      \ time\nimport numpy as np\nfrom gnuradio import gr\n\nLOG_PATH = \"/home/happy/Downloads/interference_log.json\"\
+      \nLABELS = ['BLE', 'ZIGBEE', 'CW', 'FHSS', 'MICROWAVE', 'NONE']\n\n\nclass blk(gr.sync_block):\n\
+      \    def __init__(self, parent=None):\n        super().__init__(\n         \
+      \   name=\"Data_Logger\",\n            in_sig=[\n                np.uint8, \
+      \         # 0: change_flag\n                np.float32,        # 1: duty_cycle\n\
+      \                np.complex64,      # 2: next_channel (real)\n             \
+      \   (np.int16, 6),     # 3: interference vector\n                np.float32,\
+      \        # 4: reward\n                np.float32,        # 5: oracle\n     \
+      \           np.float32,        # 6: regret\n                np.complex64,  \
+      \    # 7: est_center + j*bandwidth\n                np.float32,        # 8:\
+      \ confidence\n                np.float32         # 9: interference_power\n \
+      \           ],\n            out_sig=[]\n        )\n\n        self.parent = parent\n\
+      \n        # buffer + flush configuration\n        self._write_buf = []\n   \
+      \     self._flush_every = 100\n        self._log_path = LOG_PATH\n\n       \
+      \ # throttled summary interval (seconds)\n        self._summary_interval = 5.0\n\
+      \        self._last_summary = 0.0\n\n        # initialize parent counters if\
+      \ missing\n        if self.parent is not None:\n            if not hasattr(self.parent,\
+      \ \"count\"):\n                self.parent.count = 0\n            if not hasattr(self.parent,\
+      \ \"timestamps\"):\n                self.parent.timestamps = []\n\n        #\
+      \ load existing log file\n        if os.path.exists(LOG_PATH):\n           \
+      \ try:\n                with open(LOG_PATH, \"r\") as f:\n                 \
+      \   self.log = json.load(f)\n            except Exception:\n               \
+      \ self.log = []\n        else:\n            self.log = []\n\n    def _atomic_write(self,\
+      \ path, data):\n        \"\"\"Safe JSON write.\"\"\"\n        try:\n       \
+      \     tmp = path + \".tmp\"\n            with open(tmp, \"w\") as f:\n     \
+      \           json.dump(data, f, indent=2)\n            os.replace(tmp, path)\n\
+      \        except Exception as e:\n            # keep this lightweight; avoid\
+      \ flooding stdout\n            try:\n                print(\"Atomic write error:\"\
+      , e, flush=True)\n            except Exception:\n                pass\n\n  \
+      \  def _flush(self):\n        if not self._write_buf:\n            return\n\n\
+      \        try:\n            # load previous file\n            if os.path.exists(self._log_path):\n\
+      \                with open(self._log_path, \"r\") as f:\n                  \
+      \  try:\n                        existing = json.load(f)\n                 \
+      \   except Exception:\n                        existing = []\n            else:\n\
+      \                existing = []\n\n            # append new entries\n       \
+      \     existing.extend(self._write_buf)\n\n            # atomic write\n     \
+      \       self._atomic_write(self._log_path, existing)\n\n            # sync memory\
+      \ state\n            self.log = existing\n            self._write_buf = []\n\
+      \n        except Exception as e:\n            try:\n                print(\"\
+      Flush error:\", e, flush=True)\n            except Exception:\n            \
+      \    pass\n\n    def work(self, input_items, output_items):\n        if not\
+      \ input_items or len(input_items[0]) == 0:\n            return 0\n\n       \
+      \ n = len(input_items[0])\n\n        try:\n            for i in range(n):\n\
+      \                change_flag = bool(input_items[0][i] > 0)\n               \
+      \ duty_cycle = float(input_items[1][i])\n                # handle possibly malformed\
+      \ next_channel safely\n                try:\n                    next_channel\
+      \ = int(input_items[2][i].real)\n                except Exception:\n       \
+      \             try:\n                        next_channel = int(float(input_items[2][i]))\n\
+      \                    except Exception:\n                        next_channel\
+      \ = -1\n\n                vec = list(input_items[3][i])\n                interferences\
+      \ = [LABELS[j] for j, v in enumerate(vec) if v == 1] or [\"NONE\"]\n\n     \
+      \           reward = float(input_items[4][i])\n                oracle = float(input_items[5][i])\n\
+      \                regret = float(input_items[6][i])\n\n                est_raw\
+      \ = input_items[7][i]\n                center_freq = float(est_raw.real)\n \
+      \               bandwidth   = float(est_raw.imag)\n\n                confidence\
+      \ = float(input_items[8][i])\n                interference_power = float(input_items[9][i])\n\
+      \n                # parent state\n                selected_channel = getattr(self.parent,\
+      \ \"current_ch\", -1)\n\n                try:\n                    DFS_state\
+      \ = self.parent.DFS_State\n                except Exception:\n             \
+      \       DFS_state = {}\n\n                if next_channel in DFS_state:\n  \
+      \                  state = f\"{DFS_state[next_channel]} : DFS Channel\"\n  \
+      \              else:\n                    state = \"Non-DFS Channel\"\n\n  \
+      \              # timestamp & counter\n                now = int(time.time())\n\
+      \n                if self.parent is not None:\n                    # ensure\
+      \ attributes exist\n                    if not hasattr(self.parent, \"timestamps\"\
+      ) or self.parent.timestamps is None:\n                        self.parent.timestamps\
+      \ = []\n                    if not hasattr(self.parent, \"count\"):\n      \
+      \                  self.parent.count = 0\n\n                    self.parent.timestamp\
+      \ = now\n                    # safe append to timestamps\n                 \
+      \   try:\n                        self.parent.timestamps.append(now)\n     \
+      \               except Exception:\n                        pass\n          \
+      \          # increment counter\n                    try:\n                 \
+      \       self.parent.count += 1\n                    except Exception:\n    \
+      \                    self.parent.count = getattr(self.parent, \"count\", 0)\
+      \ + 1\n\n                entry = {\n                    \"change_flag\": \"\
+      true\" if change_flag else \"false\",\n                    \"duty_cycle\": round(duty_cycle,\
+      \ 3),\n                    \"next_channel\": next_channel,\n               \
+      \     \"selected_channel\": selected_channel,\n                    \"reward\"\
+      : round(reward, 4),\n                    \"oracle\": round(oracle, 4),\n   \
+      \                 \"regret\": round(regret, 4),\n                    \"interferences\"\
+      : interferences,\n                    \"center_freq\": center_freq,\n      \
+      \              \"bandwidth\": bandwidth,\n                    \"confidence\"\
+      : round(confidence, 3),\n                    \"interference_power\": interference_power,\n\
+      \                    \"Channel_State\": state,\n                    \"timestamp\"\
+      : now\n                }\n\n                # buffer entry (no per-sample prints)\n\
+      \                self._write_buf.append(entry)\n\n                # flush occasionally\n\
+      \                if len(self._write_buf) >= self._flush_every:\n           \
+      \         self._flush()\n\n                # throttle console visibility: compact\
+      \ summary every _summary_interval seconds\n                try:\n          \
+      \          tnow = time.time()\n                    if tnow - self._last_summary\
+      \ > self._summary_interval:\n                        self._last_summary = tnow\n\
+      \                        summary = {\n                            \"ts\": now,\n\
+      \                            \"count\": getattr(self.parent, \"count\", -1),\n\
+      \                            \"next_channel\": next_channel,\n             \
+      \               \"interferences\": interferences,\n                        \
+      \    \"confidence\": round(confidence, 3)\n                        }\n     \
+      \                   # one short print to stdout (not per-sample)\n         \
+      \               print(json.dumps(summary), flush=True)\n                except\
+      \ Exception:\n                    pass\n\n                # controlled restart/save\
+      \ every 40 samples \u2014 request graceful stop instead of os._exit\n      \
+      \          if self.parent is not None and getattr(self.parent, \"count\", 0)\
+      \ % 40 == 0:\n                    # final flush\n                    self._flush()\n\
+      \n                    # OPTIONAL: save MAB state if it exists\n            \
+      \        if hasattr(self.parent, \"save_state\"):\n                        try:\n\
+      \                            self.parent.save_state()\n                    \
+      \    except Exception as e:\n                            try:\n            \
+      \                    print(\"save_state error:\", e, flush=True)\n         \
+      \                   except Exception:\n                                pass\n\
+      \n                    # request a graceful stop of the top_block if possible\n\
+      \                    try:\n                        print(\"[DataLogger] Requesting\
+      \ graceful stop at count = {}\".format(self.parent.count), flush=True)\n   \
+      \                     if hasattr(self.parent, \"stop\") and hasattr(self.parent,\
+      \ \"wait\"):\n                            self.parent.stop()\n             \
+      \               self.parent.wait()\n                        else:\n        \
+      \                    # fallback: signal external watchdog via flag\n       \
+      \                     setattr(self.parent, \"_requested_stop\", True)\n    \
+      \                except Exception as e:\n                        try:\n    \
+      \                        print(\"[DataLogger] graceful stop request failed,\
+      \ fallback to flag:\", e, flush=True)\n                            setattr(self.parent,\
+      \ \"_requested_stop\", True)\n                        except Exception:\n  \
+      \                          pass\n\n        except Exception as e:\n        \
+      \    try:\n                print(\"DataLogger exception:\", e, flush=True)\n\
+      \                import traceback; traceback.print_exc()\n            except\
+      \ Exception:\n                pass\n\n        return n\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    parent: None
+  states:
+    _io_cache: ('Data_Logger', 'blk', [('parent', 'None')], [('0', 'byte', 1), ('1',
+      'float', 1), ('2', 'complex', 1), ('3', 'short', 6), ('4', 'float', 1), ('5',
+      'float', 1), ('6', 'float', 1), ('7', 'complex', 1), ('8', 'float', 1), ('9',
+      'float', 1)], [], '', ['parent'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2288, 848.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_4_0_0
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\"\"\"\nSafe epy\
+      \ MAB module \u2014 defensive import, guarded model load, correct work()\n\n\
+      Replace your GRC-generated epy file contents with this file.\n\"\"\"\n\nimport\
+      \ numpy as np\nimport time, math, json, pickle\nimport traceback\nfrom gnuradio\
+      \ import gr\n\n# ---------------- Helpers (unchanged logic, defensive) ----------------\n\
+      \nclass DFSManagerFull:\n    def __init__(self, dfs_channels, init_mix=0.5,\
+      \ cac_min=10, cac_max=60, nop=1800):\n        self.channels = list(map(int,\
+      \ dfs_channels))\n        self.state = {}\n        self.timer = {}\n       \
+      \ if cac_max <= cac_min:\n            cac_max = int(cac_min) + 1\n        self.cac_min\
+      \ = int(cac_min)\n        self.cac_max = int(cac_max)\n        self.nop = nop\n\
+      \        for c in self.channels:\n            if np.random.rand() < float(init_mix):\n\
+      \                self.state[c] = \"IDLE\"\n                self.timer[c] = self._safe_randint(self.cac_min,\
+      \ self.cac_max)\n            else:\n                self.state[c] = \"AVAILABLE\"\
+      \n                self.timer[c] = 0\n\n    def _safe_randint(self, low, high):\n\
+      \        low = int(low); high = int(high)\n        if high <= low:\n       \
+      \     return low\n        return np.random.randint(low, high)\n\n    def step(self):\n\
+      \        for c in self.channels:\n            st = self.state.get(c, \"AVAILABLE\"\
+      )\n            if st == \"RADAR\":\n                self.timer[c] = int(self.timer.get(c,\
+      \ 1)) - 1\n                if self.timer[c] <= 0:\n                    self.state[c]\
+      \ = \"IDLE\"\n                    self.timer[c] = self._safe_randint(self.cac_min,\
+      \ self.cac_max)\n            elif st == \"IDLE\":\n                self.timer[c]\
+      \ = int(self.timer.get(c, 1)) - 1\n                if self.timer[c] <= 0:\n\
+      \                    self.state[c] = \"AVAILABLE\"\n                    self.timer[c]\
+      \ = 0\n        return self.state\n\n    def filter_sense_log(self, channels):\n\
+      \        allowed = []\n        sget = self.state.get\n        for c in channels:\n\
+      \            st = sget(c, \"AVAILABLE\")\n            if st != \"RADAR\":\n\
+      \                allowed.append(c)\n        for c, st in self.state.items():\n\
+      \            if st == \"AVAILABLE\" and c not in allowed:\n                allowed.append(c)\n\
+      \        return allowed\n\n\nclass KalmanLayer:\n    def __init__(self, Q=0.01,\
+      \ R=0.1):\n        self.x = None; self.P = 1.0; self.Q = Q; self.R = R\n   \
+      \ def update(self, z):\n        z = float(z)\n        if self.x is None:\n \
+      \           self.x = z; return z\n        Pp = self.P + self.Q\n        K =\
+      \ Pp / (Pp + self.R)\n        self.x += K * (z - self.x)\n        self.P = (1\
+      \ - K) * Pp\n        return self.x\n\nclass KalmanVector:\n    def __init__(self,\
+      \ dim):\n        self.k = [KalmanLayer() for _ in range(dim)]\n        self.dim\
+      \ = dim\n        self._buf = np.empty(dim, dtype=float)\n    def update(self,\
+      \ v):\n        for i in range(self.dim):\n            self._buf[i] = self.k[i].update(v[i])\n\
+      \        return self._buf\n\nclass KalmanUCB:\n    def __init__(self, K, beta=2.5):\n\
+      \        self.K = max(1, int(K))\n        self.beta = float(beta)\n        self.mu\
+      \ = np.zeros(self.K)\n        self.P = np.ones(self.K)\n        self.Q = 0.01;\
+      \ self.R = 0.1\n    def select(self, allowed):\n        if not allowed:\n  \
+      \          return int(np.random.randint(0, self.K))\n        allowed_valid =\
+      \ [int(a) for a in allowed if 0 <= int(a) < self.K]\n        if not allowed_valid:\n\
+      \            return int(np.random.randint(0, self.K))\n        mu = self.mu;\
+      \ P = self.P; beta = self.beta\n        ucbs = {a: mu[a] + beta * math.sqrt(max(0.0,\
+      \ P[a])) for a in allowed_valid}\n        m = max(ucbs.values()); best = [k\
+      \ for k, v in ucbs.items() if v == m]\n        return int(np.random.choice(best))\n\
+      \    def update(self, arm, reward):\n        arm = int(arm)\n        if arm\
+      \ < 0 or arm >= self.K:\n            return\n        Pp = self.P[arm] + self.Q\n\
+      \        K = Pp / (Pp + self.R)\n        self.mu[arm] += K * (float(reward)\
+      \ - self.mu[arm])\n        self.P[arm] = (1 - K) * Pp\n\ndef map_14_to_5(f):\n\
+      \    arr = np.asarray(f, dtype=float)\n    if arr.size < 14:\n        tmp =\
+      \ np.zeros(14, dtype=float); tmp[:arr.size] = arr; arr = tmp\n    med = float(arr[0]);\
+      \ rms = float(arr[2])\n    snr = max(0.0, rms / (med + 1e-12) - 1.0)\n    snr_log\
+      \ = math.log(1.0 + snr)\n    return np.array([med, snr_log, float(arr[13]),\
+      \ float(arr[11]), float(arr[12])], dtype=float)\n\n\n# ---------------- MAB\
+      \ controller with guarded model load and valid work() ----------------\n\nclass\
+      \ MAB_Controller(gr.sync_block):\n    def __init__(self, model_path=\"\", hop_delay=0.5,\
+      \ parent=None, gc_interval: int = 50):\n        gr.sync_block.__init__(\n  \
+      \          self,\n            name=\"MAB_Controller_FullIntegrated\",\n    \
+      \        in_sig=[(np.float32, 14)],\n            out_sig=[np.complex64, np.float32,\
+      \ np.float32, np.float32]\n        )\n\n        # lightweight, import-time safe\
+      \ initial state\n        self.parent = parent\n        self.hop_delay = float(hop_delay)\n\
+      \        self._gc_interval = max(1, int(gc_interval))\n        self._mem_tick\
+      \ = 0\n\n        # parent introspection safely\n        try: nd24 = list(parent.NON_DFS_2_4_GHz)\n\
+      \        except Exception: nd24 = []\n        try: nd5 = list(parent.NON_DFS_5_GHz)\n\
+      \        except Exception: nd5 = []\n        try: dfs_keys = sorted(map(int,\
+      \ parent.DFS_State.keys()))\n        except Exception: dfs_keys = []\n\n   \
+      \     self.arm_to_ch = list(nd24) + list(nd5) + list(dfs_keys)\n        self.K\
+      \ = max(1, len(self.arm_to_ch))\n        self.ch_to_arm = {ch: i for i, ch in\
+      \ enumerate(self.arm_to_ch)}\n\n        self.dfs = DFSManagerFull(dfs_keys)\n\
+      \        self.ucb = KalmanUCB(self.K)\n        self.kf_scalar = [KalmanLayer()\
+      \ for _ in range(self.K)]\n        self.kf_feat = [KalmanVector(5) for _ in\
+      \ range(self.K)]\n\n        # guarded model load: try pickle; don't raise on\
+      \ failure\n        self.rbn = None\n        if isinstance(model_path, str) and\
+      \ model_path.strip():\n            try:\n                with open(model_path,\
+      \ \"rb\") as fh:\n                    try:\n                        self.rbn\
+      \ = pickle.load(fh)\n                        print(\"[MAB] Loaded model (pickle):\"\
+      , model_path, flush=True)\n                    except Exception as e_pickle:\n\
+      \                        # don't fail import; attempt dill/cloudpickle if available\n\
+      \                        print(\"[MAB] pickle load error \u2014 will try dill/cloudpickle:\"\
+      , str(e_pickle), flush=True)\n                        try:\n               \
+      \             fh.seek(0)\n                            import dill as _dill\n\
+      \                            self.rbn = _dill.load(fh)\n                   \
+      \         print(\"[MAB] Loaded model (dill):\", model_path, flush=True)\n  \
+      \                      except Exception as e_dill:\n                       \
+      \     print(\"[MAB] model load failed, continuing without rbn:\", str(e_dill),\
+      \ flush=True)\n            except Exception as e_open:\n                print(\"\
+      [MAB] Could not open model file \u2014 continuing without rbn:\", str(e_open),\
+      \ flush=True)\n\n        # runtime vars\n        self.oracle = 0.0\n       \
+      \ self.init_sweep = True\n        self.sweep = 0\n\n    def predict_reward(self,\
+      \ feat, arm):\n        try:\n            arm = int(arm)\n            if arm\
+      \ < 0 or arm >= self.K:\n                arm = 0\n            x = map_14_to_5(feat)\n\
+      \            xs = self.kf_feat[arm].update(x)\n            if self.rbn is not\
+      \ None:\n                try:\n                    v = self.rbn(xs.reshape(1,\
+      \ -1))\n                    out = float(np.asarray(v).reshape(-1)[0])\n    \
+      \                del v\n                    return out\n                except\
+      \ Exception:\n                    pass\n            return float(1.0 / (1.0\
+      \ + abs(xs[0])))\n        except Exception as e:\n            print(\"[MAB]\
+      \ predict_reward internal error; fallback used:\", str(e), flush=True)\n   \
+      \         return 0.0\n\n    def work(self, input_items, output_items):\n   \
+      \     import traceback\n        try:\n            # quick guard: no input\n\
+      \            if not input_items or len(input_items[0]) == 0:\n             \
+      \   # heartbeat so we know thread is alive even with no input\n            \
+      \    self._hb = getattr(self, \"_hb\", 0) + 1\n                if (self._hb\
+      \ % 1000) == 0:\n                    print(f\"[MAB] heartbeat (no input) tick={self._hb}\"\
+      , flush=True)\n                return 0\n\n            inbuf = input_items[0]\n\
+      \            out_ch = output_items[0]\n            out_rew = output_items[1]\n\
+      \            out_orc = output_items[2]\n            out_reg = output_items[3]\n\
+      \n            n_avail = len(inbuf)\n            n_space = min(len(out_ch), len(out_rew),\
+      \ len(out_orc), len(out_reg))\n            m = min(n_avail, n_space)\n\n   \
+      \         # if no space, show debug and return\n            if m == 0:\n   \
+      \             self._starve = getattr(self, \"_starve\", 0) + 1\n           \
+      \     if (self._starve % 200) == 0:\n                    print(f\"[MAB] no output\
+      \ space (n_avail={n_avail}, n_space={n_space})\", flush=True)\n            \
+      \    return 0\n\n            # periodic debug message\n            self._calls\
+      \ = getattr(self, \"_calls\", 0) + 1\n            if (self._calls % 200) ==\
+      \ 0:\n                print(f\"[MAB] work called: n_avail={n_avail}, n_space={n_space},\
+      \ processing m={m}\", flush=True)\n\n            ch_to_arm = self.ch_to_arm\n\
+      \            arm_to_ch = self.arm_to_ch\n\n            for i in range(m):\n\
+      \                feat = inbuf[i]\n\n                # DFS + allowed arms\n \
+      \               self.dfs.step()\n                allowed_ch = self.dfs.filter_sense_log(arm_to_ch)\n\
+      \                allowed_arms = [ch_to_arm[c] for c in allowed_ch if c in ch_to_arm]\n\
+      \n                # Arm selection (existing sweep logic preserved)\n       \
+      \         if self.init_sweep and self.sweep < self.K and self.sweep < len(arm_to_ch):\n\
+      \                    arm = self.sweep\n                    self.sweep += 1\n\
+      \                    if self.sweep >= self.K:\n                        self.init_sweep\
+      \ = False\n                else:\n                    arm = self.ucb.select(allowed_arms)\n\
+      \n                arm = int(arm)\n                if arm < 0 or arm >= self.K:\n\
+      \                    arm = 0\n\n                next_ch = int(arm_to_ch[arm])\
+      \ if 0 <= arm < len(arm_to_ch) else (int(arm_to_ch[0]) if arm_to_ch else 0)\n\
+      \n                try:\n                    self.parent.current_ch = next_ch\n\
+      \                except Exception:\n                    pass\n\n           \
+      \     rew = self.predict_reward(feat, arm)\n                if rew > self.oracle:\n\
+      \                    self.oracle = rew\n                regret = self.oracle\
+      \ - rew\n                r_ucb = -regret\n\n                rs = self.kf_scalar[arm].update(r_ucb)\n\
+      \                self.ucb.update(arm, rs)\n\n                # Logging\n   \
+      \             try:\n                    print(json.dumps({\n               \
+      \         \"next_channel\": int(next_ch),\n                        \"reward\"\
+      : float(rew),\n                        \"oracle\": float(self.oracle),\n   \
+      \                     \"regret\": float(regret),\n                        \"\
+      dfs_state\": self.dfs.state\n                    }), flush=True)\n         \
+      \       except Exception:\n                    print(\"next_ch\", next_ch, \"\
+      rew\", rew, \"oracle\", self.oracle, \"regret\", regret, flush=True)\n\n   \
+      \             # Safe writes (we ensured m <= output sizes)\n               \
+      \ out_ch[i] = np.complex64(complex(next_ch, 0))\n                out_rew[i]\
+      \ = np.float32(rew)\n                out_orc[i] = np.float32(self.oracle)\n\
+      \                out_reg[i] = np.float32(regret)\n\n                # update\
+      \ per-sample DFS\n                self.dfs.step()\n\n                # free\
+      \ transient references\n                del feat, rs, r_ucb\n\n            #\
+      \ occasional GC\n            self._mem_tick = getattr(self, \"_mem_tick\", 0)\
+      \ + 1\n            if (self._mem_tick % getattr(self, \"_gc_interval\", 50))\
+      \ == 0:\n                import gc; gc.collect()\n\n            return m\n\n\
+      \        except Exception:\n            print(\"[MAB] Exception in work():\"\
+      , flush=True)\n            traceback.print_exc()\n            return 0\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    gc_interval: '50'
+    hop_delay: '0.005'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    model_path: '''rbn_predictor_kalmanucb_optimized.pkl'''
+    parent: None
+  states:
+    _io_cache: ('MAB_Controller_FullIntegrated', 'MAB_Controller', [('model_path',
+      "''"), ('hop_delay', '0.5'), ('parent', 'None'), ('gc_interval', '50')], [('0',
+      'float', 14)], [('0', 'complex', 1), ('1', 'float', 1), ('2', 'float', 1), ('3',
+      'float', 1)], '', ['hop_delay', 'parent'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1104, 680.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_5
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom PIL import Image\nfrom gnuradio import\
+      \ gr\n\nIMG_IN  = 255 * 255  # 65025\nIMG_OUT = 224 * 224  # 50176\n\nclass\
+      \ blk(gr.sync_block):\n    def __init__(self):\n        gr.sync_block.__init__(\n\
+      \            self,\n            name=\"VecResize_255_to_224\",\n           \
+      \ in_sig=[(np.uint8, IMG_IN)],   # 65025 input\n            out_sig=[(np.uint8,\
+      \ IMG_OUT)]  # 50176 output\n        )\n\n    def work(self, input_items, output_items):\n\
+      \        inp = input_items[0]\n        out = output_items[0]\n\n        # Convert\
+      \ incoming vector to 255\xD7255 image\n        img = Image.fromarray(inp.reshape(255,\
+      \ 255)).convert(\"RGB\")\n\n        # Resize to 224\xD7224\n        img = img.resize((224,\
+      \ 224))\n\n        # Convert back to 1D vector\n        out[:] = np.asarray(img,\
+      \ dtype=np.uint8).transpose(2,0,1)[0].reshape(IMG_OUT)\n\n        # Return number\
+      \ of input samples consumed\n        return IMG_IN  # \U0001F448 Correct return\
+      \ \u2705\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ('VecResize_255_to_224', 'blk', [], [('0', 'byte', 65025)], [('0',
+      'byte', 50176)], '', [])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [864, 864.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_6
+  id: epy_block
+  parameters:
+    _source_code: "import numpy as np\nfrom gnuradio import gr\nfrom collections import\
+      \ deque\n\nclass blk(gr.sync_block):\n    \"\"\"\n    Raw-signal interference\
+      \ power estimator.\n    Input:  complex64 IQ samples\n    Output: float32 per-sample\
+      \ interference power (Pi)\n\n    Pi = ShortTermPower - NoiseFloor\n    \"\"\"\
+      \n\n    def __init__(self,\n                 short_win=256,      # short-term\
+      \ energy window\n                 noise_win=4096,     # long-term noise estimator\
+      \ window\n                 alpha=0.05):        # smoothing factor\n        gr.sync_block.__init__(\n\
+      \            self,\n            name='RAW_InterferenceEstimator',\n        \
+      \    in_sig=[np.complex64],\n            out_sig=[np.float32]\n        )\n\n\
+      \        # Parameters\n        self.short_win = int(short_win)\n        self.noise_win\
+      \ = int(noise_win)\n        self.alpha = float(alpha)\n\n        # Buffers\n\
+      \        self.short_buf = deque(maxlen=self.short_win)\n        self.noise_buf\
+      \ = deque(maxlen=self.noise_win)\n\n        # State variables\n        self.noise_floor\
+      \ = 0.0\n        self.last_Pi = 0.0\n\n    def work(self, input_items, output_items):\n\
+      \        iq = input_items[0]\n        out = output_items[0]\n        n = len(iq)\n\
+      \n        for i in range(n):\n            s = iq[i]\n\n            # instantaneous\
+      \ magnitude squared\n            p_inst = float((s.real * s.real) + (s.imag\
+      \ * s.imag))\n\n            # short-term window power\n            self.short_buf.append(p_inst)\n\
+      \            Pshort = float(np.mean(self.short_buf)) if len(self.short_buf)\
+      \ > 1 else p_inst\n\n            # update long-term noise estimate (slow varying)\n\
+      \            self.noise_buf.append(p_inst)\n            Pnoise_raw = float(np.median(self.noise_buf))\n\
+      \n            # EMA smoothing noise floor\n            self.noise_floor = (1\
+      \ - self.alpha) * self.noise_floor + self.alpha * Pnoise_raw\n\n           \
+      \ # Interference power\n            Pi = Pshort - self.noise_floor\n       \
+      \     if Pi < 0:        # clamp numerical negatives\n                Pi = 0.0\n\
+      \n            self.last_Pi = Pi\n            out[i] = Pi\n\n        return n\n"
+    affinity: ''
+    alias: ''
+    alpha: '0.3'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    noise_win: '4096'
+    short_win: '256'
+  states:
+    _io_cache: '(''RAW_InterferenceEstimator'', ''blk'', [(''short_win'', ''256''),
+      (''noise_win'', ''4096''), (''alpha'', ''0.05'')], [(''0'', ''complex'', 1)],
+      [(''0'', ''float'', 1)], ''\n    Raw-signal interference power estimator.\n    Input:  complex64
+      IQ samples\n    Output: float32 per-sample interference power (Pi)\n\n    Pi
+      = ShortTermPower - NoiseFloor\n    '', [''alpha'', ''noise_win'', ''short_win''])'
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [456, 1064.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_7
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# sample_probe_vector.py\nimport time,\
+      \ numpy as np\nfrom gnuradio import gr\n\nclass blk(gr.sync_block):\n    \"\"\
+      \"\n    Vector probe: use when downstream sees vectors (e.g. stream_to_vector).\n\
+      \    in_sig = [(np.complex64, N)] and out_sig same. Reports vector count.\n\
+      \    Set report_every to a small number for fast feedback (e.g. 10).\n    \"\
+      \"\"\n    def __init__(self, vec_len=2048, report_every=10):\n        # vec_len\
+      \ is the number of samples per vector element\n        gr.sync_block.__init__(self,\n\
+      \            name=\"sample_probe_vector\",\n            in_sig=[(np.complex64,\
+      \ int(vec_len))],\n            out_sig=[])\n        self.vec_len = int(vec_len)\n\
+      \        self.count = 0\n        self.report_every = int(report_every)\n   \
+      \     \n\n    def work(self, input_items, output_items):\n        inbuf = input_items[0]\n\
+      \        nvec = len(inbuf)   # number of vectors available\n        if nvec\
+      \ > 0:\n            self.count += nvec\n            # copy vectors through\n\
+      \            \n            if self.count % self.report_every == 0 or self.count\
+      \ < 5:\n                print(f\"[vector-probe] vectors={self.count} vec_len={self.vec_len}\
+      \ time={time.time():.1f}\", flush=True)\n        else:\n            print(\"\
+      [vector-probe] no vectors this call\", flush=True)\n        return nvec\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    report_every: '10'
+    vec_len: '2048'
+  states:
+    _io_cache: '(''sample_probe_vector'', ''blk'', [(''vec_len'', ''2048''), (''report_every'',
+      ''10'')], [(''0'', ''complex'', 2048)], [], ''\n    Vector probe: use when downstream
+      sees vectors (e.g. stream_to_vector).\n    in_sig = [(np.complex64, N)] and
+      out_sig same. Reports vector count.\n    Set report_every to a small number
+      for fast feedback (e.g. 10).\n    '', [''report_every'', ''vec_len''])'
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [648, 912.0]
+    rotation: 0
+    state: disabled
+- name: epy_block_8
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\nimport numpy\
+      \ as np\nfrom gnuradio import gr\n\nclass blk(gr.sync_block):\n    \"\"\"\n\
+      \    Smooth Stream \u2192 Vector Accumulator\n    ----------------------------------\n\
+      \    Eliminates GR scheduler batching.\n\n    - Accepts a raw stream of complex64\
+      \ samples\n    - Maintains an internal buffer\n    - Emits vectors of length\
+      \ vec_len as soon as enough samples arrive\n    - Never stalls upstream or downstream\n\
+      \    \"\"\"\n\n    def __init__(self, vec_len=2048):\n        gr.sync_block.__init__(\n\
+      \            self,\n            name=\"smooth_stream_to_vector\",\n        \
+      \    in_sig=[np.complex64],\n            out_sig=[(np.complex64, vec_len)]\n\
+      \        )\n\n        self.vec_len = vec_len\n        self.buffer = np.zeros(0,\
+      \ dtype=np.complex64)\n\n    def work(self, input_items, output_items):\n  \
+      \      inp = input_items[0]\n        out = output_items[0]\n\n        nin =\
+      \ len(inp)\n        nout = len(out)\n\n        # append new samples to buffer\n\
+      \        if nin > 0:\n            self.buffer = np.concatenate((self.buffer,\
+      \ inp))\n\n        produced = 0\n\n        # output as many full vectors as\
+      \ available\n        while len(self.buffer) >= self.vec_len and produced < nout:\n\
+      \            out[produced][:] = self.buffer[:self.vec_len]\n            self.buffer\
+      \ = self.buffer[self.vec_len:]\n            produced += 1\n\n        return\
+      \ produced\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vec_len: '200'
+  states:
+    _io_cache: "('smooth_stream_to_vector', 'blk', [('vec_len', '2048')], [('0', 'complex',\
+      \ 1)], [('0', 'complex', 2048)], '\\n    Smooth Stream \u2192 Vector Accumulator\\\
+      n    ----------------------------------\\n    Eliminates GR scheduler batching.\\\
+      n\\n    - Accepts a raw stream of complex64 samples\\n    - Maintains an internal\
+      \ buffer\\n    - Emits vectors of length vec_len as soon as enough samples arrive\\\
+      n    - Never stalls upstream or downstream\\n    ', ['vec_len'])"
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [304, 680.0]
+    rotation: 0
+    state: disabled
+- name: epy_block_9
+  id: epy_block
+  parameters:
+    _source_code: "\"\"\"\nEmbedded Python Blocks:\n\nEach time this file is saved,\
+      \ GRC will instantiate the first class it finds\nto get ports and parameters\
+      \ of your block. The arguments to __init__  will\nbe the parameters. All of\
+      \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
+      from gnuradio import gr\n\n\nclass blk(gr.sync_block):  # other base classes\
+      \ are basic_block, decim_block, interp_block\n    \"\"\"Embedded Python Block\
+      \ example - a simple multiply const\"\"\"\n\n    def __init__(self, example_param=1.0):\
+      \  # only default arguments here\n        \"\"\"arguments to this function show\
+      \ up as parameters in GRC\"\"\"\n        gr.sync_block.__init__(\n         \
+      \   self,\n            name='Embedded Python Block',   # will show up in GRC\n\
+      \            in_sig=[\n                np.uint8,          # 0: change_flag\n\
+      \                np.float32,        # 1: duty_cycle\n                np.complex64,\
+      \      # 2: next_channel (real)\n                (np.int16, 6),     # 3: interference\
+      \ vector\n                np.float32,        # 4: reward\n                np.float32,\
+      \        # 5: oracle\n                np.float32,        # 6: regret\n     \
+      \           np.complex64,      # 7: est_center + j*bandwidth\n             \
+      \   np.float32,        # 8: confidence\n                np.float32         #\
+      \ 9: interference_power\n            ],\n            out_sig=[     # 1: duty_cycle\n\
+      \                ]\n        )\n        # if an attribute with the same name\
+      \ as a parameter is found,\n        # a callback is registered (properties work,\
+      \ too).\n        self.example_param = example_param\n\n    def work(self, input_items,\
+      \ output_items):\n        \"\"\"example: multiply with constant\"\"\"\n    \
+      \    output_items[0][:] = 1\n        return 1\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    example_param: '1.0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ('Embedded Python Block', 'blk', [('example_param', '1.0')], [('0',
+      'byte', 1), ('1', 'float', 1), ('2', 'complex', 1), ('3', 'short', 6), ('4',
+      'float', 1), ('5', 'float', 1), ('6', 'float', 1), ('7', 'complex', 1), ('8',
+      'float', 1), ('9', 'float', 1)], [], 'Embedded Python Block example - a simple
+      multiply const', ['example_param'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1880, 424.0]
+    rotation: 0
+    state: disabled
+- name: iio_pluto_sink_0
+  id: iio_pluto_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    attenuation1: '5.0'
+    bandwidth: '20000000'
+    buffer_size: '32768'
+    comment: ''
+    cyclic: 'True'
+    filter: ''
+    filter_source: '''Auto'''
+    fpass: '0'
+    frequency: Center_freq
+    fstop: '0'
+    len_tag_key: ''
+    samplerate: samp_rate
+    type: fc32
+    uri: ip:192.168.2.1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [576, 212.0]
+    rotation: 0
+    state: disabled
+- name: iio_pluto_source_0
+  id: iio_pluto_source
+  parameters:
+    affinity: ''
+    alias: ''
+    bandwidth: '20000000'
+    bbdc: 'True'
+    buffer_size: '32768'
+    comment: ''
+    filter: ''
+    filter_source: '''Auto'''
+    fpass: '0'
+    frequency: Center_freq
+    fstop: '0'
+    gain1: '''slow_attack'''
+    len_tag_key: packet_len
+    manual_gain1: '50'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    quadrature: 'True'
+    rfdc: 'True'
+    samplerate: samp_rate
+    type: fc32
+    uri: ip:192.168.2.1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [16, 668.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_freq_sink_x_0_0
+  id: qtgui_freq_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    axislabels: 'True'
+    bw: samp_rate
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    ctrlpanel: 'False'
+    fc: Center_freq
+    fftsize: '1024'
+    freqhalf: 'True'
+    grid: 'False'
+    gui_hint: ''
+    label: Relative Gain
+    label1: ''
+    label10: ''''''
+    label2: ''''''
+    label3: ''''''
+    label4: ''''''
+    label5: ''''''
+    label6: ''''''
+    label7: ''''''
+    label8: ''''''
+    label9: ''''''
+    legend: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '"Trnasmitted"'
+    nconnections: '1'
+    norm_window: 'False'
+    showports: 'False'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_tag: '""'
+    type: complex
+    units: dB
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    wintype: window.WIN_BLACKMAN_hARRIS
+    ymax: '10'
+    ymin: '-140'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [568, 104.0]
+    rotation: 0
+    state: disabled
+- name: qtgui_freq_sink_x_0_0_0
+  id: qtgui_freq_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    axislabels: 'True'
+    bw: samp_rate
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    ctrlpanel: 'False'
+    fc: Center_freq
+    fftsize: '1024'
+    freqhalf: 'True'
+    grid: 'False'
+    gui_hint: ''
+    label: Relative Gain
+    label1: ''
+    label10: ''''''
+    label2: ''''''
+    label3: ''''''
+    label4: ''''''
+    label5: ''''''
+    label6: ''''''
+    label7: ''''''
+    label8: ''''''
+    label9: ''''''
+    legend: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '"Recieved"'
+    nconnections: '1'
+    norm_window: 'False'
+    showports: 'False'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_tag: '""'
+    type: complex
+    units: dB
+    update_time: '0.1'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    wintype: window.WIN_BLACKMAN_hARRIS
+    ymax: '10'
+    ymin: '-140'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [288, 464.0]
+    rotation: 0
+    state: enabled
+- name: virtual_sink_0
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: A
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1360, 432.0]
+    rotation: 0
+    state: disabled
+- name: virtual_sink_0_0
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: B
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1192, 616.0]
+    rotation: 0
+    state: disabled
+- name: virtual_sink_0_0_0
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: C
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1544, 936.0]
+    rotation: 0
+    state: disabled
+- name: virtual_sink_0_0_0_0
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: E
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 1160.0]
+    rotation: 0
+    state: disabled
+- name: virtual_sink_0_1
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: D
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1336, 584.0]
+    rotation: 0
+    state: disabled
+
+connections:
+- [analog_noise_source_x_0, '0', blocks_add_xx_0, '1']
+- [blocks_add_xx_0, '0', iio_pluto_sink_0, '0']
+- [blocks_add_xx_0, '0', qtgui_freq_sink_x_0_0, '0']
+- [blocks_complex_to_mag_squared_0, '0', epy_block_2, '0']
+- [blocks_stream_to_vector_0, '0', blocks_complex_to_mag_squared_0, '0']
+- [blocks_stream_to_vector_0, '0', epy_block_0, '0']
+- [blocks_stream_to_vector_0, '0', epy_block_7, '0']
+- [epy_block_0, '0', epy_block_4_0_0, '0']
+- [epy_block_0, '1', epy_block_5, '0']
+- [epy_block_1, '0', blocks_add_xx_0, '0']
+- [epy_block_2, '0', epy_block_3, '0']
+- [epy_block_3, '0', epy_block_4_0, '0']
+- [epy_block_3, '0', epy_block_9, '0']
+- [epy_block_3, '0', virtual_sink_0, '0']
+- [epy_block_3, '1', epy_block_4_0, '1']
+- [epy_block_3, '1', epy_block_9, '1']
+- [epy_block_3, '1', virtual_sink_0_1, '0']
+- [epy_block_4, '0', epy_block_4_0, '3']
+- [epy_block_4, '0', epy_block_9, '3']
+- [epy_block_4, '1', epy_block_4_0, '7']
+- [epy_block_4, '1', epy_block_9, '7']
+- [epy_block_4, '1', virtual_sink_0_0_0, '0']
+- [epy_block_4, '2', epy_block_4_0, '8']
+- [epy_block_4, '2', epy_block_9, '8']
+- [epy_block_4_0_0, '0', epy_block_4_0, '2']
+- [epy_block_4_0_0, '0', epy_block_9, '2']
+- [epy_block_4_0_0, '0', virtual_sink_0_0, '0']
+- [epy_block_4_0_0, '1', epy_block_4_0, '4']
+- [epy_block_4_0_0, '1', epy_block_9, '4']
+- [epy_block_4_0_0, '2', epy_block_4_0, '5']
+- [epy_block_4_0_0, '2', epy_block_9, '5']
+- [epy_block_4_0_0, '3', epy_block_4_0, '6']
+- [epy_block_4_0_0, '3', epy_block_9, '6']
+- [epy_block_5, '0', epy_block_4, '0']
+- [epy_block_6, '0', epy_block_4_0, '9']
+- [epy_block_6, '0', epy_block_9, '9']
+- [epy_block_6, '0', virtual_sink_0_0_0_0, '0']
+- [epy_block_8, '0', blocks_complex_to_mag_squared_0, '0']
+- [epy_block_8, '0', epy_block_0, '0']
+- [epy_block_8, '0', epy_block_7, '0']
+- [iio_pluto_source_0, '0', blocks_stream_to_vector_0, '0']
+- [iio_pluto_source_0, '0', epy_block_6, '0']
+- [iio_pluto_source_0, '0', epy_block_8, '0']
+- [iio_pluto_source_0, '0', qtgui_freq_sink_x_0_0_0, '0']
+
+metadata:
+  file_format: 1
+  grc_version: 3.10.9.2

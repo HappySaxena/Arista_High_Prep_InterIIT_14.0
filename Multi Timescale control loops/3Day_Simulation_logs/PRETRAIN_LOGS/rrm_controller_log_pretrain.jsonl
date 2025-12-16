@@ -1,0 +1,715 @@
+{"ts": 1764882453.1323392, "step": 2, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.10491752624511719, "sleep_sec": 119.89508247375488, "num_aps": 1, "rl_enabled": false, "cooldown_active": false}}
+{"ts": 1764882573.1332018, "step": 3, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0769035816192627, "sleep_sec": 119.92309641838074, "num_aps": 3, "rl_enabled": false, "cooldown_active": false}}
+{"ts": 1764882573.2112374, "step": 3, "phase": "pretrain", "event": "rl_enabled_after_warmup", "data": {"baseline_ma": -0.006249999999999867}}
+{"ts": 1764882573.2142665, "step": 3, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764882573.214412, "step": 3, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_bw", "value": 40, "rl_action": 3, "rl_action_after_locality": 3}}
+{"ts": 1764882573.2145188, "step": 3, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764882693.1339676, "step": 4, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08106327056884766, "sleep_sec": 119.91893672943115, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764882693.2123983, "step": 4, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764882693.2126095, "step": 4, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764882693.2127385, "step": 4, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764882813.1347706, "step": 5, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07848620414733887, "sleep_sec": 119.92151379585266, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764882813.2157547, "step": 5, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764882813.2158964, "step": 5, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764882813.2159967, "step": 5, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764882933.1355662, "step": 6, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0808258056640625, "sleep_sec": 119.91917419433594, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764882933.2162657, "step": 6, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764882933.2164128, "step": 6, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_bw", "value": 40, "rl_action": 3, "rl_action_after_locality": 3}}
+{"ts": 1764882933.216512, "step": 6, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883053.13633, "step": 7, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08065462112426758, "sleep_sec": 119.91934537887573, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764883053.2174711, "step": 7, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883053.2177145, "step": 7, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883053.2178278, "step": 7, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883173.1371763, "step": 8, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08112359046936035, "sleep_sec": 119.91887640953064, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764883173.2490609, "step": 8, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883173.2492404, "step": 8, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883173.249341, "step": 8, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883293.1455672, "step": 9, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1039268970489502, "sleep_sec": 119.89607310295105, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764883293.2402089, "step": 9, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883293.240463, "step": 9, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883413.1458664, "step": 10, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.09481120109558105, "sleep_sec": 119.90518879890442, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764883413.2346237, "step": 10, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883413.2348835, "step": 10, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883533.1461487, "step": 11, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08891153335571289, "sleep_sec": 119.91108846664429, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764883533.2310793, "step": 11, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883533.2317715, "step": 11, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883533.231921, "step": 11, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883653.1464493, "step": 12, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0856468677520752, "sleep_sec": 119.91435313224792, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764883653.2300322, "step": 12, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883653.2307208, "step": 12, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883653.2308457, "step": 12, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883773.1467474, "step": 13, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08426451683044434, "sleep_sec": 119.91573548316956, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764883773.2312553, "step": 13, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883773.2314878, "step": 13, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883773.2316275, "step": 13, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883893.1470156, "step": 14, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08477616310119629, "sleep_sec": 119.9152238368988, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764883893.2340298, "step": 14, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883893.2342775, "step": 14, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764883893.2344556, "step": 14, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884013.1473236, "step": 15, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08734273910522461, "sleep_sec": 119.91265726089478, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764884013.2245674, "step": 15, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884013.2248244, "step": 15, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884013.2249322, "step": 15, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884133.1476595, "step": 16, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07741904258728027, "sleep_sec": 119.92258095741272, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764884133.2332847, "step": 16, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884133.2335243, "step": 16, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884253.1555324, "step": 17, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07821249961853027, "sleep_sec": 119.92178750038147, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764884253.2427156, "step": 17, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884253.2429187, "step": 17, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884253.2430797, "step": 17, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884373.1558645, "step": 18, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08740830421447754, "sleep_sec": 119.91259169578552, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764884373.2403233, "step": 18, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884373.2405603, "step": 18, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884373.240713, "step": 18, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884493.1561074, "step": 19, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08477401733398438, "sleep_sec": 119.91522598266602, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764884493.241645, "step": 19, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884493.2418125, "step": 19, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884493.241941, "step": 19, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap3", "topic": "rrm/actions/ap3", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884613.156365, "step": 20, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08574390411376953, "sleep_sec": 119.91425609588623, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764884613.239875, "step": 20, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap2", "topic": "rrm/actions/ap2", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884613.2400465, "step": 20, "phase": "pretrain", "event": "apply_action", "data": {"ap_id": "ap1", "topic": "rrm/actions/ap1", "action": "set_tx_power", "value": 13.0, "rl_action": 1, "rl_action_after_locality": 1}}
+{"ts": 1764884613.24013, "step": 20, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764884733.1566331, "step": 21, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08363175392150879, "sleep_sec": 119.91636824607849, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764884733.2462428, "step": 21, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764884733.2464402, "step": 21, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764884733.2465408, "step": 21, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764884853.1571906, "step": 22, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08981847763061523, "sleep_sec": 119.91018152236938, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764884853.238212, "step": 22, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764884853.2383075, "step": 22, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764884853.2383933, "step": 22, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764884973.1581304, "step": 23, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0809028148651123, "sleep_sec": 119.91909718513489, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764884973.2337782, "step": 23, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764884973.2338638, "step": 23, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764884973.2339346, "step": 23, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764885093.158672, "step": 24, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0754404067993164, "sleep_sec": 119.92455959320068, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764885093.2408555, "step": 24, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764885093.2410004, "step": 24, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764885093.2410758, "step": 24, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764885213.159325, "step": 25, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08221435546875, "sleep_sec": 119.91778564453125, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764885213.2334251, "step": 25, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764885213.2335985, "step": 25, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764885213.2336645, "step": 25, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764885333.1599066, "step": 26, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07397937774658203, "sleep_sec": 119.92602062225342, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764885333.2435675, "step": 26, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764885333.2437065, "step": 26, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764885333.2437828, "step": 26, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764885453.1679888, "step": 27, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07594847679138184, "sleep_sec": 119.92405152320862, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764885453.2490268, "step": 27, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764885453.2492409, "step": 27, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764885453.249294, "step": 27, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764885573.1682858, "step": 28, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08114314079284668, "sleep_sec": 119.91885685920715, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764885573.2442825, "step": 28, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764885573.2443602, "step": 28, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764885573.2444196, "step": 28, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764885693.1685762, "step": 29, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07603812217712402, "sleep_sec": 119.92396187782288, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764885693.3296974, "step": 29, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764885693.3299203, "step": 29, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764885693.3300807, "step": 29, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764885813.1691024, "step": 30, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1612870693206787, "sleep_sec": 119.83871293067932, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764885813.332189, "step": 30, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764885813.332487, "step": 30, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764885813.3326333, "step": 30, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764885933.1696777, "step": 31, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.16330528259277344, "sleep_sec": 119.83669471740723, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764885933.329777, "step": 31, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764885933.330038, "step": 31, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764885933.3301778, "step": 31, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764886053.1703782, "step": 32, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1602153778076172, "sleep_sec": 119.83978462219238, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764886053.3228636, "step": 32, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764886053.3231256, "step": 32, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764886053.3232756, "step": 32, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764886173.1710052, "step": 33, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.15257883071899414, "sleep_sec": 119.847421169281, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764886173.7308106, "step": 33, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764886173.73114, "step": 33, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764886173.7313216, "step": 33, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764886293.171674, "step": 34, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.5601527690887451, "sleep_sec": 119.43984723091125, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764886293.3484185, "step": 34, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764886293.3489778, "step": 34, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764886293.349241, "step": 34, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764886413.172269, "step": 35, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.17746186256408691, "sleep_sec": 119.82253813743591, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764886413.345756, "step": 35, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764886413.3461666, "step": 35, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764886413.3463268, "step": 35, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764886533.1727817, "step": 36, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.17383098602294922, "sleep_sec": 119.82616901397705, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764886533.3269665, "step": 36, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764886533.3271856, "step": 36, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764886533.3273325, "step": 36, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764886653.1733005, "step": 37, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1544055938720703, "sleep_sec": 119.84559440612793, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764886653.3412588, "step": 37, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764886653.3414981, "step": 37, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764886653.3416843, "step": 37, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764886773.1741028, "step": 38, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.16789484024047852, "sleep_sec": 119.83210515975952, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764886773.3465402, "step": 38, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764886773.3470535, "step": 38, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764886773.3472295, "step": 38, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764886893.1746733, "step": 39, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1729280948638916, "sleep_sec": 119.82707190513611, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764886893.3441591, "step": 39, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764886893.3445468, "step": 39, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764886893.3447063, "step": 39, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764887013.1752279, "step": 40, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.16977953910827637, "sleep_sec": 119.83022046089172, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764887013.3546026, "step": 40, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764887013.3548265, "step": 40, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764887013.3549333, "step": 40, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764887133.183348, "step": 41, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.17185068130493164, "sleep_sec": 119.82814931869507, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764887133.3500729, "step": 41, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764887133.3502474, "step": 41, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764887133.3503563, "step": 41, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764887253.1915858, "step": 42, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.15902471542358398, "sleep_sec": 119.84097528457642, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764887253.3798118, "step": 42, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764887253.3801239, "step": 42, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764887253.3802583, "step": 42, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764887373.2000954, "step": 43, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1804361343383789, "sleep_sec": 119.81956386566162, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764887373.3789387, "step": 43, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764887373.3792384, "step": 43, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764887373.3793807, "step": 43, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764887520.7698529, "step": 44, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.17161989212036133, "sleep_sec": 119.82838010787964, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764887520.9503934, "step": 44, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764887520.9506543, "step": 44, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764887520.950807, "step": 44, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764887640.7787497, "step": 45, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.17283225059509277, "sleep_sec": 119.82716774940491, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764887640.9553857, "step": 45, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764887640.955634, "step": 45, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764887640.955794, "step": 45, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764887760.7874854, "step": 46, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1689002513885498, "sleep_sec": 119.83109974861145, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764887760.954567, "step": 46, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764887760.9548116, "step": 46, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764887760.9549112, "step": 46, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764887880.7959068, "step": 47, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.15923380851745605, "sleep_sec": 119.84076619148254, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764887880.9794054, "step": 47, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764887880.9796643, "step": 47, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764887880.9799504, "step": 47, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764888000.8038776, "step": 48, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.17655467987060547, "sleep_sec": 119.8234453201294, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764888000.9817104, "step": 48, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764888000.981931, "step": 48, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764888000.9820392, "step": 48, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764888120.8125281, "step": 49, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.17007780075073242, "sleep_sec": 119.82992219924927, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764888121.0199914, "step": 49, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764888121.020667, "step": 49, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764888121.021075, "step": 49, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764888240.8212082, "step": 50, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.20076489448547363, "sleep_sec": 119.79923510551453, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764888240.9899392, "step": 50, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764888240.9901488, "step": 50, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764888240.9902463, "step": 50, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764888360.829947, "step": 51, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.16089701652526855, "sleep_sec": 119.83910298347473, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764888360.991097, "step": 51, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764888360.9912655, "step": 51, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764888360.9913824, "step": 51, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764888480.8383942, "step": 52, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1532738208770752, "sleep_sec": 119.84672617912292, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764888481.0035868, "step": 52, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764888481.0038064, "step": 52, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764888481.003927, "step": 52, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764888600.8470278, "step": 53, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.15745234489440918, "sleep_sec": 119.84254765510559, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764888601.0160267, "step": 53, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764888601.01627, "step": 53, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764888601.0164113, "step": 53, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764888720.855622, "step": 54, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.16136527061462402, "sleep_sec": 119.83863472938538, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764888721.026824, "step": 54, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764888721.0270338, "step": 54, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764888721.0271504, "step": 54, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764888853.7139404, "step": 55, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1633923053741455, "sleep_sec": 119.83660769462585, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764888853.8830938, "step": 55, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764888853.8833032, "step": 55, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764888853.8834562, "step": 55, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764888973.7227938, "step": 56, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.16138839721679688, "sleep_sec": 119.8386116027832, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764888973.8970888, "step": 56, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764888973.8973167, "step": 56, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764888973.8974597, "step": 56, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764889093.7315598, "step": 57, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1665055751800537, "sleep_sec": 119.83349442481995, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764889093.9056845, "step": 57, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764889093.9060063, "step": 57, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764889093.9061759, "step": 57, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764889213.740146, "step": 58, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.16655564308166504, "sleep_sec": 119.83344435691833, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764889213.909288, "step": 58, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764889213.9095178, "step": 58, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764889213.9097335, "step": 58, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764889333.7487228, "step": 59, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1616673469543457, "sleep_sec": 119.83833265304565, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764889333.9114318, "step": 59, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764889333.911608, "step": 59, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764889333.9117584, "step": 59, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764889453.7574654, "step": 60, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.15486741065979004, "sleep_sec": 119.84513258934021, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764889453.9299667, "step": 60, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764889453.9301794, "step": 60, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764889453.9303298, "step": 60, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764889574.947142, "step": 61, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1645824909210205, "sleep_sec": 119.83541750907898, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764889575.1210458, "step": 61, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764889575.1212556, "step": 61, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764889575.121397, "step": 61, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764889694.95564, "step": 62, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1661357879638672, "sleep_sec": 119.83386421203613, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764889695.127957, "step": 62, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764889695.12818, "step": 62, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764889695.128349, "step": 62, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764889814.964069, "step": 63, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.16490411758422852, "sleep_sec": 119.83509588241577, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764889815.124723, "step": 63, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764889815.1249037, "step": 63, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764889815.1250167, "step": 63, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764889934.964659, "step": 64, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1606905460357666, "sleep_sec": 119.83930945396423, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764889935.127185, "step": 64, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764889935.1273437, "step": 64, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764889935.1274514, "step": 64, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764890054.9733634, "step": 65, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.15462827682495117, "sleep_sec": 119.84537172317505, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764890055.1375554, "step": 65, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764890055.137793, "step": 65, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764890055.1379554, "step": 65, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764890174.9821622, "step": 66, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.15650320053100586, "sleep_sec": 119.843496799469, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764890175.1475046, "step": 66, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764890175.147715, "step": 66, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764890175.1478696, "step": 66, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764890294.9908724, "step": 67, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.15758800506591797, "sleep_sec": 119.84241199493408, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764890295.1561282, "step": 67, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764890295.1562798, "step": 67, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764890295.1564012, "step": 67, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764890414.999616, "step": 68, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.15737438201904297, "sleep_sec": 119.84262561798096, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764890415.1649475, "step": 68, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764890415.1650941, "step": 68, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764890415.1652267, "step": 68, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764890535.0081193, "step": 69, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1573779582977295, "sleep_sec": 119.84262204170227, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764890535.1718042, "step": 69, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764890535.1719785, "step": 69, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764890535.1721182, "step": 69, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764890655.0161712, "step": 70, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.156235933303833, "sleep_sec": 119.84376406669617, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764890655.1837997, "step": 70, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764890655.1839778, "step": 70, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764890655.1841657, "step": 70, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764890775.0244179, "step": 71, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.16033101081848145, "sleep_sec": 119.83966898918152, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764890775.1940203, "step": 71, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764890775.1941745, "step": 71, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764890775.1943111, "step": 71, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764890895.0328212, "step": 72, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.16196227073669434, "sleep_sec": 119.8380377292633, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764890895.1901913, "step": 72, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764890895.1903257, "step": 72, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764890895.1904423, "step": 72, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764891015.0416358, "step": 73, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.14943337440490723, "sleep_sec": 119.85056662559509, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764891015.2001157, "step": 73, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764891015.200245, "step": 73, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764891015.2003384, "step": 73, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764891135.0499783, "step": 74, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.15061211585998535, "sleep_sec": 119.84938788414001, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764891135.233092, "step": 74, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764891135.2333283, "step": 74, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764891135.2334573, "step": 74, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764891255.0505092, "step": 75, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.18325257301330566, "sleep_sec": 119.8167474269867, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764891255.541388, "step": 75, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764891255.5417216, "step": 75, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764891255.5418413, "step": 75, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764891375.0591187, "step": 76, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.4832282066345215, "sleep_sec": 119.51677179336548, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764891375.2319083, "step": 76, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764891375.2321262, "step": 76, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764891375.232253, "step": 76, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764891495.0677066, "step": 77, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.1650834083557129, "sleep_sec": 119.83491659164429, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764891495.1550922, "step": 77, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764891495.1553316, "step": 77, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764891495.1554234, "step": 77, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764891615.0759087, "step": 78, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07972931861877441, "sleep_sec": 119.92027068138123, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764891615.1652565, "step": 78, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764891615.165404, "step": 78, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764891615.1654813, "step": 78, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764891735.084504, "step": 79, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0814826488494873, "sleep_sec": 119.91851735115051, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764891735.1726987, "step": 79, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764891735.1728818, "step": 79, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764891735.1729536, "step": 79, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764891855.0929563, "step": 80, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08024883270263672, "sleep_sec": 119.91975116729736, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764891855.1796825, "step": 80, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764891855.179807, "step": 80, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764891855.179882, "step": 80, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764891975.1015277, "step": 81, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0788717269897461, "sleep_sec": 119.92112827301025, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764891975.1878843, "step": 81, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764891975.188082, "step": 81, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764891975.1881752, "step": 81, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764892095.1102955, "step": 82, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07838225364685059, "sleep_sec": 119.92161774635315, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764892095.198353, "step": 82, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764892095.1985154, "step": 82, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764892095.1985981, "step": 82, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764892215.1186519, "step": 83, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08017706871032715, "sleep_sec": 119.91982293128967, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764892215.2023623, "step": 83, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764892215.202519, "step": 83, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764892215.2026036, "step": 83, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764892335.1272235, "step": 84, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07584619522094727, "sleep_sec": 119.92415380477905, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764892335.2124596, "step": 84, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764892335.2126336, "step": 84, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764892335.2127106, "step": 84, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764892455.1359344, "step": 85, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07725882530212402, "sleep_sec": 119.92274117469788, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764892455.222595, "step": 85, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764892455.2227712, "step": 85, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764892455.2228327, "step": 85, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764892575.1441388, "step": 86, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07886624336242676, "sleep_sec": 119.92113375663757, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764892575.230163, "step": 86, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764892575.2303226, "step": 86, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764892575.2303865, "step": 86, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764892695.1518843, "step": 87, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07866096496582031, "sleep_sec": 119.92133903503418, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764892695.2312458, "step": 87, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764892695.2313664, "step": 87, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764892695.2314267, "step": 87, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764892815.159605, "step": 88, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0720059871673584, "sleep_sec": 119.92799401283264, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764892815.2460554, "step": 88, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764892815.2462265, "step": 88, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764892815.2462885, "step": 88, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764892935.167848, "step": 89, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07904863357543945, "sleep_sec": 119.92095136642456, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764892935.2549827, "step": 89, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764892935.2551193, "step": 89, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764892935.2552, "step": 89, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764893055.1761196, "step": 90, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07950639724731445, "sleep_sec": 119.92049360275269, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764893055.261465, "step": 90, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764893055.2615962, "step": 90, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764893055.2616637, "step": 90, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764893175.18439, "step": 91, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07747697830200195, "sleep_sec": 119.922523021698, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764893175.2724836, "step": 91, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764893175.2726383, "step": 91, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764893175.2727058, "step": 91, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764893295.1932077, "step": 92, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07997584342956543, "sleep_sec": 119.92002415657043, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764893295.2800617, "step": 92, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764893295.2802186, "step": 92, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764893295.2802951, "step": 92, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764893415.2013152, "step": 93, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07919669151306152, "sleep_sec": 119.92080330848694, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764893415.2869456, "step": 93, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764893415.287632, "step": 93, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764893415.2877119, "step": 93, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764893535.209686, "step": 94, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07817625999450684, "sleep_sec": 119.9218237400055, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764893535.2904525, "step": 94, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764893535.2906668, "step": 94, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764893535.290723, "step": 94, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764893655.2101352, "step": 95, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08084702491760254, "sleep_sec": 119.9191529750824, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764893655.2950008, "step": 95, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764893655.295179, "step": 95, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764893655.295234, "step": 95, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764893775.2184014, "step": 96, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07707619667053223, "sleep_sec": 119.92292380332947, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764893775.294694, "step": 96, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764893775.2976506, "step": 96, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764893775.2977483, "step": 96, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764893895.2193763, "step": 97, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0787808895111084, "sleep_sec": 119.92121911048889, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764893895.3072746, "step": 97, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764893895.3074667, "step": 97, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764893895.3075364, "step": 97, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764894015.2277458, "step": 98, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08025765419006348, "sleep_sec": 119.91974234580994, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764894015.3167405, "step": 98, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764894015.3169017, "step": 98, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764894015.3169672, "step": 98, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764894135.2362392, "step": 99, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08117318153381348, "sleep_sec": 119.91882681846619, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764894135.3219593, "step": 99, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764894135.3221703, "step": 99, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764894135.3222392, "step": 99, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764894255.244874, "step": 100, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07773947715759277, "sleep_sec": 119.92226052284241, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764894255.326645, "step": 100, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764894255.3267539, "step": 100, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764894255.3268068, "step": 100, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764894375.2482731, "step": 101, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07868242263793945, "sleep_sec": 119.92131757736206, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764894375.33026, "step": 101, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764894375.3303761, "step": 101, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764894375.3304315, "step": 101, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764894495.255954, "step": 102, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07466959953308105, "sleep_sec": 119.92533040046692, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764894495.338928, "step": 102, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764894495.3390462, "step": 102, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764894495.3391125, "step": 102, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764894615.264177, "step": 103, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07538819313049316, "sleep_sec": 119.9246118068695, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764894615.3521388, "step": 103, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764894615.352296, "step": 103, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764894615.3523538, "step": 103, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764894735.2725105, "step": 104, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08003520965576172, "sleep_sec": 119.91996479034424, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764894735.3588147, "step": 104, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764894735.358972, "step": 104, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764894735.3590271, "step": 104, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764894855.2811186, "step": 105, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07848238945007324, "sleep_sec": 119.92151761054993, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764894855.36725, "step": 105, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764894855.3674092, "step": 105, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764894855.3674626, "step": 105, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764894975.2894769, "step": 106, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07818603515625, "sleep_sec": 119.92181396484375, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764894975.3694024, "step": 106, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764894975.3695347, "step": 106, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764894975.3696127, "step": 106, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764895095.290928, "step": 107, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07892870903015137, "sleep_sec": 119.92107129096985, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764895095.380526, "step": 107, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764895095.3806982, "step": 107, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764895095.380799, "step": 107, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764895215.2995808, "step": 108, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0817255973815918, "sleep_sec": 119.91827440261841, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764895215.3839867, "step": 108, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764895215.3842125, "step": 108, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764895215.3842785, "step": 108, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764895335.307654, "step": 109, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07710790634155273, "sleep_sec": 119.92289209365845, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764895335.3913116, "step": 109, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764895335.391482, "step": 109, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764895335.3915431, "step": 109, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764895455.3163118, "step": 110, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07571077346801758, "sleep_sec": 119.92428922653198, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764895455.4179757, "step": 110, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764895455.4204211, "step": 110, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764895455.420492, "step": 110, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764895575.32488, "step": 111, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.09607625007629395, "sleep_sec": 119.9039237499237, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764895575.4019468, "step": 111, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764895575.4021094, "step": 111, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764895575.4021647, "step": 111, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764895695.325802, "step": 112, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07680892944335938, "sleep_sec": 119.92319107055664, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764895695.4097238, "step": 112, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764895695.4098887, "step": 112, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764895695.4099417, "step": 112, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764895815.3342369, "step": 113, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07592916488647461, "sleep_sec": 119.92407083511353, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764895815.5699303, "step": 113, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764895815.570093, "step": 113, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764895815.5701473, "step": 113, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764895935.3424878, "step": 114, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.22783970832824707, "sleep_sec": 119.77216029167175, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764895935.4261317, "step": 114, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764895935.4263077, "step": 114, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764895935.4263742, "step": 114, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764896055.350823, "step": 115, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07621312141418457, "sleep_sec": 119.92378687858582, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764896055.4343998, "step": 115, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764896055.4345798, "step": 115, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764896055.4346492, "step": 115, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764896175.3591335, "step": 116, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07573509216308594, "sleep_sec": 119.92426490783691, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764896175.445213, "step": 116, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764896175.4453416, "step": 116, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764896175.4454014, "step": 116, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764896295.367418, "step": 117, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07846283912658691, "sleep_sec": 119.92153716087341, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764896295.4542332, "step": 117, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764896295.4543867, "step": 117, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764896295.4544578, "step": 117, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764896415.3760998, "step": 118, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07885193824768066, "sleep_sec": 119.92114806175232, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764896415.459462, "step": 118, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764896415.459596, "step": 118, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764896415.459659, "step": 118, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764896535.3847148, "step": 119, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07539534568786621, "sleep_sec": 119.92460465431213, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764896535.47243, "step": 119, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764896535.4726105, "step": 119, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764896535.4726896, "step": 119, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764896655.3929698, "step": 120, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07989025115966797, "sleep_sec": 119.92010974884033, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764896655.4794698, "step": 120, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764896655.4796286, "step": 120, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764896655.4797015, "step": 120, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764896775.3935943, "step": 121, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08628010749816895, "sleep_sec": 119.91371989250183, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764896775.476599, "step": 121, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764896775.47675, "step": 121, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764896775.476806, "step": 121, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764896895.3943746, "step": 122, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08295273780822754, "sleep_sec": 119.91704726219177, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764896895.4870296, "step": 122, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764896895.4871655, "step": 122, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764896895.4872499, "step": 122, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764897015.402808, "step": 123, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08494424819946289, "sleep_sec": 119.91505575180054, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764897015.4945054, "step": 123, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764897015.494699, "step": 123, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764897015.494771, "step": 123, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764897135.4037292, "step": 124, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.09152650833129883, "sleep_sec": 119.9084734916687, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764897135.5025272, "step": 124, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764897135.5027635, "step": 124, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764897135.502846, "step": 124, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764897255.412506, "step": 125, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.09090995788574219, "sleep_sec": 119.90909004211426, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764897255.5007744, "step": 125, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764897255.5009124, "step": 125, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764897255.5010035, "step": 125, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764897375.4208736, "step": 126, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08029890060424805, "sleep_sec": 119.91970109939575, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764897375.518495, "step": 126, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764897375.5186222, "step": 126, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764897375.5187159, "step": 126, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764897495.428955, "step": 127, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.09020376205444336, "sleep_sec": 119.90979623794556, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764897495.5233736, "step": 127, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764897495.5235722, "step": 127, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764897495.5236404, "step": 127, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764897615.4373248, "step": 128, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08678984642028809, "sleep_sec": 119.91321015357971, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764897615.526365, "step": 128, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764897615.5265286, "step": 128, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764897615.5266259, "step": 128, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764897735.446013, "step": 129, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08117961883544922, "sleep_sec": 119.91882038116455, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764897735.5451515, "step": 129, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764897735.5453746, "step": 129, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764897735.5454454, "step": 129, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764897855.454621, "step": 130, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.09128785133361816, "sleep_sec": 119.90871214866638, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764897855.5473707, "step": 130, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764897855.5475357, "step": 130, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764897855.5476482, "step": 130, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764897975.4632523, "step": 131, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08492064476013184, "sleep_sec": 119.91507935523987, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764897975.5523977, "step": 131, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764897975.55264, "step": 131, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764897975.5527408, "step": 131, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764898095.4720578, "step": 132, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08115029335021973, "sleep_sec": 119.91884970664978, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764898095.5601718, "step": 132, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764898095.560607, "step": 132, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764898095.5606809, "step": 132, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764898215.480523, "step": 133, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08037877082824707, "sleep_sec": 119.91962122917175, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764898215.5678527, "step": 133, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764898215.5680232, "step": 133, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764898215.568077, "step": 133, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764898335.489188, "step": 134, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07936263084411621, "sleep_sec": 119.92063736915588, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764898335.5766683, "step": 134, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764898335.5768359, "step": 134, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764898335.5769036, "step": 134, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764898455.4975946, "step": 135, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07959270477294922, "sleep_sec": 119.92040729522705, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764898455.587779, "step": 135, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764898455.5879295, "step": 135, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764898455.5880048, "step": 135, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764898575.5058765, "step": 136, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08236432075500488, "sleep_sec": 119.917635679245, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764898575.5978785, "step": 136, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764898575.600254, "step": 136, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764898575.6003299, "step": 136, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764898695.5146616, "step": 137, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08627104759216309, "sleep_sec": 119.91372895240784, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764898695.6006029, "step": 137, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764898695.600738, "step": 137, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764898695.6008322, "step": 137, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764898815.5233595, "step": 138, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07795047760009766, "sleep_sec": 119.9220495223999, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764898815.61378, "step": 138, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764898815.613902, "step": 138, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764898815.6139636, "step": 138, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764898935.5320935, "step": 139, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08234977722167969, "sleep_sec": 119.91765022277832, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764898935.6170819, "step": 139, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764898935.6172454, "step": 139, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764898935.6173043, "step": 139, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764899055.5407872, "step": 140, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07699465751647949, "sleep_sec": 119.92300534248352, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764899055.6307523, "step": 140, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764899055.6308713, "step": 140, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764899055.6309412, "step": 140, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764899175.5495005, "step": 141, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08200716972351074, "sleep_sec": 119.91799283027649, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764899175.6484697, "step": 141, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764899175.6486263, "step": 141, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764899175.648694, "step": 141, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764899295.5582104, "step": 142, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.09096217155456543, "sleep_sec": 119.90903782844543, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764899295.6713824, "step": 142, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764899295.6715477, "step": 142, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764899295.6716168, "step": 142, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764899415.5667934, "step": 143, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.10525870323181152, "sleep_sec": 119.89474129676819, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764899415.6546469, "step": 143, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764899415.6547797, "step": 143, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764899415.654867, "step": 143, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764899535.5747344, "step": 144, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08034038543701172, "sleep_sec": 119.91965961456299, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764899535.6673994, "step": 144, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764899535.6675713, "step": 144, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764899535.6676457, "step": 144, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764899655.5831206, "step": 145, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08474540710449219, "sleep_sec": 119.91525459289551, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764899655.668688, "step": 145, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764899655.6688282, "step": 145, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764899655.6689065, "step": 145, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764899775.5912275, "step": 146, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07806634902954102, "sleep_sec": 119.92193365097046, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764899775.6772335, "step": 146, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764899775.6774068, "step": 146, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764899775.6774635, "step": 146, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764899895.59992, "step": 147, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07799315452575684, "sleep_sec": 119.92200684547424, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764899895.6894276, "step": 147, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764899895.6895525, "step": 147, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764899895.6896312, "step": 147, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764900015.6082242, "step": 148, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08166384696960449, "sleep_sec": 119.9183361530304, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764900015.710732, "step": 148, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764900015.7108498, "step": 148, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764900015.7109272, "step": 148, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764900135.6166668, "step": 149, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.09472489356994629, "sleep_sec": 119.90527510643005, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764900135.7034163, "step": 149, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764900135.7035348, "step": 149, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764900135.7036018, "step": 149, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764900255.6250372, "step": 150, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07874894142150879, "sleep_sec": 119.92125105857849, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764900255.7173064, "step": 150, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764900255.7174737, "step": 150, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764900255.717534, "step": 150, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764900375.6336534, "step": 151, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08436965942382812, "sleep_sec": 119.91563034057617, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764900375.7267063, "step": 151, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764900375.7268326, "step": 151, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764900375.726914, "step": 151, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764900495.6422584, "step": 152, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08513951301574707, "sleep_sec": 119.91486048698425, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764900495.728947, "step": 152, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764900495.7291112, "step": 152, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764900495.7291784, "step": 152, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764900615.6509583, "step": 153, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0786905288696289, "sleep_sec": 119.92130947113037, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764900615.8888671, "step": 153, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764900615.8890324, "step": 153, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764900615.8891053, "step": 153, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764900735.6592422, "step": 154, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.23002004623413086, "sleep_sec": 119.76997995376587, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764900735.7444615, "step": 154, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764900735.7446463, "step": 154, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764900735.7447147, "step": 154, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764900855.6669362, "step": 155, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0779869556427002, "sleep_sec": 119.9220130443573, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764900855.7487671, "step": 155, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764900855.7489016, "step": 155, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764900855.7489755, "step": 155, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764900975.6749096, "step": 156, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07454371452331543, "sleep_sec": 119.92545628547668, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764900975.7586882, "step": 156, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764900975.7588084, "step": 156, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764900975.7588916, "step": 156, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764901095.6836083, "step": 157, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07584381103515625, "sleep_sec": 119.92415618896484, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764901095.7667627, "step": 157, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764901095.7668834, "step": 157, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764901095.766961, "step": 157, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764901215.6923523, "step": 158, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0750885009765625, "sleep_sec": 119.92491149902344, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764901215.782739, "step": 158, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764901215.7829082, "step": 158, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764901215.7829616, "step": 158, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764901335.700989, "step": 159, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08241152763366699, "sleep_sec": 119.91758847236633, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764901335.7875745, "step": 159, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764901335.7877421, "step": 159, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764901335.78782, "step": 159, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764901455.7095494, "step": 160, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07877922058105469, "sleep_sec": 119.92122077941895, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764901455.795271, "step": 160, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764901455.7954032, "step": 160, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764901455.795471, "step": 160, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764901575.718209, "step": 161, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07774782180786133, "sleep_sec": 119.92225217819214, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764901575.8066247, "step": 161, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764901575.806757, "step": 161, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764901575.806832, "step": 161, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764901695.7268374, "step": 162, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08041906356811523, "sleep_sec": 119.91958093643188, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764901695.813857, "step": 162, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764901695.8139791, "step": 162, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764901695.8140476, "step": 162, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764901815.7354012, "step": 163, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07910704612731934, "sleep_sec": 119.92089295387268, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764901815.820767, "step": 163, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764901815.8208818, "step": 163, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764901815.8209429, "step": 163, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764901935.7441833, "step": 164, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07722759246826172, "sleep_sec": 119.92277240753174, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764901935.831077, "step": 164, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764901935.8312442, "step": 164, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764901935.831298, "step": 164, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764902055.7527902, "step": 165, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07895374298095703, "sleep_sec": 119.92104625701904, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764902055.8415115, "step": 165, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764902055.8416362, "step": 165, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764902055.8417008, "step": 165, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764902175.7615328, "step": 166, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08075761795043945, "sleep_sec": 119.91924238204956, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764902175.8507771, "step": 166, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764902175.8508997, "step": 166, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764902175.8509696, "step": 166, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764902295.7700386, "step": 167, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08137345314025879, "sleep_sec": 119.91862654685974, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764902295.8576646, "step": 167, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764902295.8578367, "step": 167, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764902295.8578994, "step": 167, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764902415.7783654, "step": 168, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07967281341552734, "sleep_sec": 119.92032718658447, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764902415.865297, "step": 168, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764902415.8654776, "step": 168, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764902415.8655798, "step": 168, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764902535.7860665, "step": 169, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07969856262207031, "sleep_sec": 119.92030143737793, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764902535.8773732, "step": 169, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764902535.877547, "step": 169, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764902535.8776572, "step": 169, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764902655.793966, "step": 170, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08385992050170898, "sleep_sec": 119.91614007949829, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764902655.8842514, "step": 170, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764902655.8844855, "step": 170, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764902655.884581, "step": 170, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764902775.7946494, "step": 171, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.09044837951660156, "sleep_sec": 119.9095516204834, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764902775.8826663, "step": 171, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764902775.8828027, "step": 171, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764902775.8828592, "step": 171, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764902895.803366, "step": 172, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07997465133666992, "sleep_sec": 119.92002534866333, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764902895.8873746, "step": 172, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764902895.8875, "step": 172, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764902895.887587, "step": 172, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764903015.8119633, "step": 173, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07611083984375, "sleep_sec": 119.92388916015625, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764903015.9013016, "step": 173, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764903015.9014208, "step": 173, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764903015.9014857, "step": 173, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764903135.820507, "step": 174, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08142542839050293, "sleep_sec": 119.9185745716095, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764903135.905019, "step": 174, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764903135.9051766, "step": 174, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764903135.9052374, "step": 174, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764903255.821434, "step": 175, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.0843656063079834, "sleep_sec": 119.91563439369202, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764903255.9090097, "step": 175, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764903255.9091225, "step": 175, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764903255.909205, "step": 175, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764903375.8301895, "step": 176, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07952356338500977, "sleep_sec": 119.92047643661499, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764903375.9104362, "step": 176, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764903375.9105437, "step": 176, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764903375.9106152, "step": 176, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764903495.8310058, "step": 177, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08006596565246582, "sleep_sec": 119.91993403434753, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764903495.9161966, "step": 177, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764903495.9163275, "step": 177, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764903495.9164038, "step": 177, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764903615.8395302, "step": 178, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07734036445617676, "sleep_sec": 119.92265963554382, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764903615.9279516, "step": 178, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764903615.9280462, "step": 178, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764903615.9280903, "step": 178, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764903735.8479948, "step": 179, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.08044695854187012, "sleep_sec": 119.91955304145813, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764903735.9252079, "step": 179, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764903735.9253829, "step": 179, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764903735.925447, "step": 179, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764903855.848725, "step": 180, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07732534408569336, "sleep_sec": 119.9226746559143, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764903855.93626, "step": 180, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764903855.936433, "step": 180, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764903855.936483, "step": 180, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
+{"ts": 1764903975.8571477, "step": 181, "phase": "pretrain", "event": "slow_loop_step_done", "data": {"elapsed_sec": 0.07956051826477051, "sleep_sec": 119.92043948173523, "num_aps": 3, "rl_enabled": true, "cooldown_active": false}}
+{"ts": 1764903975.9459474, "step": 181, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap2", "site_change_budget_per_day": 50}}
+{"ts": 1764903975.9461076, "step": 181, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap1", "site_change_budget_per_day": 50}}
+{"ts": 1764903975.94617, "step": 181, "phase": "pretrain", "event": "site_change_budget_block", "data": {"ap_id": "ap3", "site_change_budget_per_day": 50}}
