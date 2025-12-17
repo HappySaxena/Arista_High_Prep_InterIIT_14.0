@@ -74,7 +74,7 @@ To overcome limitations of AP-side scanning, we implemented a **dedicated sensin
 ---
 
 ## 👥 Advanced Client View (Without 802.11mc)
-Since deployment hardware lacked IEEE 802.11mc (FTM), a **passive client-view framework** was designed using TCP timestamps.
+Since deployment hardware lacked IEEE 802.11mc (FTM), a **passive client-view framework** was designed using TCP timestamps (TSval &TSecr) which is more robust than ping and ACK based RTT method.
 
 For each client, the system derives:
 - Median RTT
