@@ -38,6 +38,7 @@ The system is designed around **three coordinated control loops**, each operatin
   - Interference graph construction
   - DSATUR graph coloring
   - GNN-based Q-learning with **Conservative Q-Learning (CQL)**
+  - Offline training on pre-collected episodes using Grid Search and Early Stopping for optimization.
 - Optimizes:
   - Channel
   - Transmit power
